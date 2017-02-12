@@ -1,0 +1,196 @@
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage[utf8]{inputenc}
+ 
+
+\setcounter{tocdepth}{3}
+
+\usepackage[english]{babel} 
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{hyperref}
+%Margins
+\usepackage[
+margin=2cm,
+includefoot
+]{geometry}
+
+
+\graphicspath{{img/}}
+
+%Headers and Footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+%\title{NavUP
+%	Software Requirements Specification}
+%
+%\author{Andries du Plooy (15226183), Vignesh Iyer (15031625), Thokozile Mabuzu (...), Mfana Masimula (12077713), Thabo Ntsoane  (15107532), Avinash Singh (14043778), Nicaedin Suklal (15207812)}
+%
+%\date{24 February 2017}
+%
+%\institute{University Of Pretoria - COS 301 Software Engineering}
+%
+%
+%
+%\authorrunning{Team Indigo}
+%\titlerunning{SRC for NavUp}
+%
+	%Title Page
+	\begin{titlepage}
+		\begin{center}
+			\includegraphics[width=10cm]{UP.jpg}  \\
+			[1cm]
+			\line(1,0){300} \\
+			[0.3cm]
+			\textsc{\Large
+				NavUP\\
+				Software Requirements Specification\\
+			\hfill \break 24 February 2017
+				%University of Pretoria
+			}\\
+			[0.1cm]
+			\line(1,0){300} \\
+			[0.7cm]
+			\textsc{\Large
+				Team Indigo
+			} \\
+			
+			
+			
+		\end{center}
+		
+		\begin{center}
+			\begin{multicols}{2}
+				\textsc{\large\\
+				Andries du Plooy\\ 
+					15226183\\ 
+				}
+				
+				\textsc{\large\\
+				Vignesh Iyer\\
+					 15031625\\ 
+				}
+				
+				\textsc{\large\\
+		        Mfana Masimula\\
+				 	12077713\\ 
+				}
+				
+				
+				\textsc{\large\\
+					Thabo Ntsoane\\
+					15107532\\
+				}
+				
+				\columnbreak
+				
+				\textsc{\large\\
+					 Avinash Singh\\
+					14043778\\
+				}
+				
+				\textsc{\large\\
+					Nicaedin Suklal\\
+					15207812\\
+				}
+
+				
+				\textsc{\large\\
+					Thokozile Mabuzu\\
+					???\\
+				}
+				
+			\end{multicols}
+			
+			
+			\textsc{	\\ \href{https://github.com/AndriesJacobus/SE-Indigo}{GitHub}
+				\url{https://github.com/AndriesJacobus/SE-Indigo.git}}
+			
+		\end{center}
+	\end{titlepage}
+%\maketitle
+
+\begingroup
+
+\tableofcontents
+\addcontentsline{toc}{section}{Table Of Contents}
+\endgroup
+\newpage
+
+
+\section{Introduction}
+
+\subsection{Purpose}
+\paragraph{The purpose of this Software Requirements Specification Document is to lay out the findings of a standardised requirements elicitation for the proposed application. In doing this, both the capabilites that the system is expected to deliver together, with the constraints on the solution space are described. The document will take into account requirements, as set out by both the developers and the prospective users, in order to lay a foundation for the up-coming phases of the Software Development Cycle. The various sections each provide details on specific types of requirements of the system. The intended audience include developers/peers(Team Indigo and other COS 301 teams), domain experts(COS 301 Lectures and the University of Pretoria Management), customers/end-users(students, staff and visitors at the University of Pretoria) who will perform a technical, expert  and customer review of this document respectively. }
+\subsection{Scope}
+\paragraph{The name of the proposed software application is NavUP (NavigationUP). NavUP is intended to be an information service application that is to provide navigational information to visitors, employees and students of the Unviersity of Preotria. This includes usual navigational functions (mapping and routing of campus), surveillance, user based information delivery and event calenders. NavUP will not extend its functionalities outside the Hatfield Campus and the University of Pretoria will not take any responsibility for any injury, damage or whatsoever that may be a result of the system. The application is used at your own risk. The objectives of the product include making the University of Pretoria feel more "like home" to all stakeholders alike. The application aims to facilate a wide range of users who have had diffculties in the past with regard travelling within the premesis. Ease of travel, accessbility of various facilities, time optimisations, event/day-to-day coordinations, alliviating pedestrian traffic congestion problems, description of activities etc. are the joint objecctives of the project. The goal is to integrate existing systems in the university like the Wifi-hotspots, IT-Services, Official Univeristy Website and Social Media and more so as to keep the costs of initial infrastructure to a minimum. Another goal is for the system to make use of human resources for its develpoment and usage i.e. expertise from the COS 301, Honours groups of students and lecctures to satisfy the former and make use of crowdsourcing principles (using smart devices) to serve the latter. The benefits include smoothness of the day-to-day operations at the University which leads to greater productivity and efficiency among students and staff alike. It allows the university to increase its brand value in terms of the facilities it provides to keep external stakeholders happy. National and Global Rankings of the unviersity are bound to rise and consequently attract a larger group of people in the long run.}
+\subsection{Definitions, Acronyms, and Abbreviations}
+\paragraph{...}
+\subsection{References}
+\paragraph{...}
+\subsection{Overview}
+\paragraph{The rest of this document will be solely focussed on elaborating on the requirements of the NavUP system. It is structured according to the IEEE Std 830-1998 standard. An overall description of the product will be followed by a specifc detailed requirements description. Each item in both the sections represent the ideas as generated during compilation and there is every possibility of changes when it comes to implementation.}
+
+\section{Overall Description}
+
+\subsection{Product Perspective}
+
+\subsubsection{System Interfaces}
+\paragraph{...}
+\subsubsection{User Interfaces}
+\paragraph{...}
+\subsubsection{Hardware Interfaces}
+\paragraph{...}
+\subsubsection{Software Interfaces}
+\paragraph{...}
+\subsubsection{Communication Interfaces}
+\paragraph{...}
+\subsubsection{Memory}
+\paragraph{...}
+\subsubsection{Operations}
+\paragraph{...}
+\subsubsection{Site Adaption Requirements}
+\paragraph{...}
+
+\subsection{Product Functions}
+\paragraph{...}
+\subsection{User Characteristics}
+\paragraph{...}
+\subsection{Constraints}
+\paragraph{...}
+\subsection{Assumptions and Dependencies}
+\paragraph{...}
+
+\section{Specific Requirements}
+
+\subsection{External Interface Requirements}
+\paragraph{...}
+\subsection{Functional Requirements}
+\paragraph{...}
+\subsection{Performance Requirements}
+\paragraph{...}
+\subsection{Design Constraints}
+\paragraph{...}
+\subsection{Software System Attributes}
+\paragraph{...}
+\subsection{Other Requirements}
+\paragraph{...}
+
+\section{Appendixes}
+\paragraph{...}
+
+\section{Index}
+\paragraph{...}
+
+\end{document}
