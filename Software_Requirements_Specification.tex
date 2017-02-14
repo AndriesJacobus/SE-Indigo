@@ -219,12 +219,17 @@ Although security is not a key feature, the system should not store any personal
  In spite of this the navigation route should be flexible in the sense there could be many different routes that the user can take and the system should be able to redirect or find another the best route that is in the users radius.
 
 \paragraph{Maintainability \\}
- 
+ The system needs to be maintainable so that the future prospects of this system can expand to other campuses and in doing so code should be modular and well documented. Software and frameworks to be used should have a wide range of support and be established aiding the maintainability of the system.
 
 \paragraph{Scalability \\}
- 
+ The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft with compatibility support.
 
 \paragraph{Auditability \\}
+ The system should make use of logs so that if there are any  queries or faults it can easily be traced or detected. These logs will also log navigational information, and for future prospects a user can opt in to share their experience where these log files could be sent to a remote server where the developers can analyse this data to improve the system. \\The following is necessary to be logged:
+ \begin{itemize}
+ 	\item Program crashes
+ 	\item Navigation route (source and destination and some meta data [e.g. Time taken, estimated distance, etc.])
+ \end{itemize}
  
 
 \paragraph{Usability \\}
