@@ -10,9 +10,9 @@
 \usepackage{float}
 \usepackage{multicol}
 \usepackage{url}
-\usepackage{hyperref}
+ 
 \usepackage{titling}
-
+\usepackage[hidelinks]{hyperref}
 \setcounter{secnumdepth}{5}
 %Margins
 \usepackage[
@@ -31,7 +31,7 @@ includefoot
 \fancyfoot[R]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
- 
+ \setlength\parindent{24pt}
 \begin{document}
 
 %\title{NavUP
@@ -198,34 +198,42 @@ The factors that affect the requirements are:
 \paragraph{...}
 
 % BEGIN Avinash
-\subsection{Software System Attributes}
-\subsubsection{Quality Requirements}
-The following section will focus on the quality requirements of the overall system at its
-highest level of granularity. All the requirements defined, are for all components
-of the system.
-\paragraph{Reliability \\}
+ \subsection{Software System Attributes}
+\subsubsection{Quality Requirements \\}
+The following section will focus on the quality requirements of the overall system (mobile application) at its highest level of granularity. All the requirements defined, are for all components of the system.
 
+\paragraph{Reliability \\}
+The system should be reliable in the fact that the user should be able to reach his/her destination and that the information provided by the system is accurate and authentic. The system should also provide additional information aiding the reliability by giving a short description or history of the building or venue to make it more reliable. 
 
 \paragraph{Security \\}
-
+Although security is not a key feature, the system should not store any personal information or leak any information from the users device. The system should have access to the users Wi-Fi connections as well as cellular fall-back for enhanced navigation, and the system should not store any Wi-Fi information from the device or pull usernames or passwords from the users device. 
 
 \paragraph{Availability \\}
-
+The system should be available to most recent types of user devices and operating systems on these devices. The system should always be on-line except if there is no Wi-Fi connectivity.
 
 \paragraph{Flexibility \\}
-
+An important element of the system is its flexibility. 
+Each component of the system should be decoupled from every other component, thus allowing you to change certain components without affecting anything else. 
+For example it should be easy to add a new Lecture Venue to the system with little or no code modifications. 
+The main focus of the software is to allow the user to easily navigate to his/her destination with minimal effort.
+In spite of this the navigation route should be flexible in the sense there could be many different routes that the user can take and the system should be able to redirect or find another the best route that is in the users radius.
 
 \paragraph{Maintainability \\}
-
+The system needs to be maintainable so that the future prospects of this system can expand to other campuses and in doing so code should be modular and well documented. Software and frameworks to be used should have a wide range of support and be established aiding the maintainability of the system.
 
 \paragraph{Scalability \\}
-
+The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft with compatibility support.
 
 \paragraph{Auditability \\}
+The system should make use of logs so that if there are any  queries or faults it can easily be traced or detected. These logs will also log navigational information, and for future prospects a user can opt in to share their experience where these log files could be sent to a remote server where the developers can analyse this data to improve the system. \\The following is necessary to be logged:
+\begin{itemize}
+	\item Program crashes
+	\item Navigation route (source and destination and some meta data [e.g. Time taken, estimated distance, etc.])
+\end{itemize}
 
 
 \paragraph{Usability \\}
-
+The system should be easy to use and adhere to UI/UX standards with regards to the layout and user interfaces for interaction. The system should have easy navigation between functionality and views, as well as a intuitive way to display or simulate the user navigating to his/her destination.
 
 % END Avinash
 
