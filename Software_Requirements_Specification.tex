@@ -191,7 +191,48 @@ The factors that affect the requirements are:
 \subsection{External Interface Requirements}
 \paragraph{...}
 \subsection{Functional Requirements}
-\paragraph{...}
+
+\let\labelitemi\labelitemii
+The NavUP system will provide the user with an interactive graphical map of the University of Pretoria’s Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:
+
+\begin{itemize}
+
+\item The system will accept user input (a pointing device or touch screen) which can be processed to produce output of scrolling the map around and within its boundaries and viewing the various symbolic representations of the University premises.
+
+\item The system will provide a map query feature by means of a search bar input. Input can range from names of buildings, lecture halls, faculties, schools, departments, restaurants and coffee shops, shops, laboratories, libraries, study centres, offices, toilets,  parking facilities, gate numbers, streets and student organisations and day houses. NavUP will auto-scroll the map to the location as output if identification is successful. Otherwise, it will provide you with “Did you mean to say …” options or “Location could not be found” output.
+
+\item The system will be linked to UP students and staff accounts. These specific users can log-in to the system and will be given the privileges of saving locations by pinning - pinpoint locations manually by clicking the marker icon and placing it directly onto the map. Locations of modules which the user has registered for will automatically be pinned.
+
+\item NavUP will allow more prominent locations to be clicked after which a pop-up will appear with any one or both of the following: a general description of the location and information about activities and events set to take place there.
+
+\end{itemize}
+
+\let\labelitemi\labelitemii
+
+A Directional Search is feature will be provided by the system and will contain the following functionality:
+
+\begin{itemize}
+
+\item Clicking/pressed on the direction symbol will open up two different fields: a starting point and destination field. Both fields accept the same input and are constrained by the same error-checking as was for the map query function.
+
+\item The route from the starting point to the end point (both encircled) will be highlighted on the map with a bold colour and the section of the map will come into focus as soon as the search button is clicked/pressed.
+
+\item The system will map the user (represented by his electronic device) with regard to his proximity to a Wireless Router (all users making use of the Hatfield Wi-Fi are mapped in this way). NavUP will provide the user with turn-by-turn navigation directions towards their destination as they move with their device and the device connects to various Wi-Fi routers – both in terms of a moving Stick Man and automated voice instructions.
+
+\item The system will make re-routing possible if the user does not move in the initial prescribed route.
+
+\item Distance costs of the various routes will be displayed by the software and the user has to make an initial choice on which route they would like to follow.
+
+\item The system will provide the user with the option of changing between a default physical map and a traffic congestion (heat) map by means of a toggle button.
+
+\item NavUP provides the integration of traffic congestion information with routing (a checkbox is provided to enable this feature before the routing is processed) to allow users to choose routes where there is a less gathering of people (in terms of number of Wi-Fi connections alternative options are suggested).
+
+\item The system also integrates with the UP Fitness Trail route – directional information together with monitoring an embedded stopwatch is provided for this feature. Users will be able to save their progress to their accounts.
+
+\item To be continued by Vignesh....
+
+\end{itemize}
+
 \subsection{Performance Requirements}
 \paragraph{...}
 \subsection{Design Constraints}
