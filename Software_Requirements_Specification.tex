@@ -138,7 +138,16 @@ includefoot
 \subsection{Scope}
 \paragraph*{The name of the proposed software application is NavUP (NavigationUP). NavUP is intended to be an information service application that is to provide navigational information to visitors, employees and students of the University of Pretoria. This includes usual navigational functions (mapping and routing of campus), surveillance, user based information delivery and event calenders. NavUP will not extend its functionalities outside the Hatfield Campus and the University of Pretoria will not take any responsibility for any injury, damage or whatsoever that may be a result of the system. The application is used at your own risk. The objectives of the product include making the University of Pretoria feel more "like home" to all stakeholders alike. The application aims to facilitate a wide range of users who have had difficulties in the past with regard travelling within the premises. Ease of travel, accessibility of the various facilities, time optimisations, event/day-to-day coordination's, alleviating pedestrian traffic congestion problems, description of activities etc. are the joint objectives of the project. The goal is to integrate existing systems within the university like the Wi-Fi hotspots, IT-Services, Official University Website, Social Media and more.  Another goal is for the system to make use of human resources for its development and usage i.e. expertise from the COS 301, Honours groups of students and lectures to satisfy the former and make use of crowd-sourcing principles (using smart devices) to serve the latter. The benefits include smoothness of the day-to-day operations at the University which leads to greater productivity and efficiency among students and staff alike. It allows the university to increase its brand value in terms of the facilities it provides to keep external stakeholders pleased. National and Global Rankings of the university are bound to rise and consequently attract a larger group of people in the long run.}
 \subsection{Definitions, Acronyms, and Abbreviations}
-\paragraph{...}
+\paragraph{\textbf{Acronyms}}
+\begin{enumerate}
+	\item Wi-Fi - Wireless Fidelity 
+	\item SHA - Simple Hashing Algorithm
+	\item UI - User Interface
+	\item UX - User Experience
+	\item GPS - Global Positioning System
+	\item AP - Access points
+	
+\end{enumerate}
 \subsection{References}
 \paragraph{...}
 \subsection{Overview}
@@ -178,9 +187,13 @@ includefoot
 The factors that affect the requirements are:
 \begin{itemize}
 	 
-		\item Lack of connectivity -  Wi-Fi isn't available everywhere on campus (e.g. I.T building). thus assuming that Wi-Fi on campus will essentially be available everywhere in due time. \\
+		\item Lack of connectivity -  Wi-Fi isn't available everywhere on campus (e.g. I.T building). thus assuming that Wi-Fi on campus will essentially be available everywhere in due time, and/or mobile network fall-back is assumed. \\
 		
-		\item Mobile devices - it is assumed that a user will have a mobile device that can run the system.
+		\item Mobile devices - it is assumed that a user will have a mobile device that can run the application specifically run the newer versions of Android, IOS and Windows Mobile. We assumed that the mobile device was powerful enough to draw maps and emulate navigation.
+		
+		\item Server - the system depends on running on a remote server where the mobile application can authenticate and gain essential information to navigation.
+		
+		\item Hotspots - we assumed that the Wi-Fi Hotspots on campus will be forever lasting and we depend on this AP to triangulate and refine navigation on the application.
 	 
 \end{itemize}
 % END Avinash
@@ -209,7 +222,7 @@ The NavUP system will provide the user with an interactive graphical map of the 
 
 \let\labelitemi\labelitemii
 
-A Directional Search is feature will be provided by the system and will contain the following functionality:
+\noindent \\A Directional Search is feature will be provided by the system and will contain the following functionality:
 
 \begin{itemize}
 
@@ -270,7 +283,7 @@ state to roll back changes.
  The system needs to be maintainable so that the future prospects of this system can expand to other campuses and in doing so code should be modular and well documented. Software and frameworks to be used should have a wide range of support and be established aiding the maintainability of the system.
 
 \paragraph{\textbf{Scalability} \\}
- The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even Augmented reality for the ultimate user experience.
+ The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft Windows Mobile with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even Augmented reality for the ultimate user experience.
 
 \paragraph{\textbf{Auditability} \\}
  The system and application should make use of logs so that if there are any  queries or faults it can easily be traced or detected. These logs will also log navigational information, and for future prospects a user can opt in to share their experience where these log files from the application could be sent to a remote server where the developers can analyse this data to improve the system. \\The following is necessary to be logged:
