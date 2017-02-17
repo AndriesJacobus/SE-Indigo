@@ -110,7 +110,7 @@ includefoot
 \subsection{Purpose}
 \paragraph*{The purpose of this Software Requirements Specification Document is to lay out the findings of a standardised requirements elicitation for the proposed application. In doing this, both the capabilities that the application is expected to deliver together, with the constraints on the solution space are described.\newline \newline The document will take into account requirements, as set out by both the developers and the prospective users, in order to lay a foundation for the up-coming phases of the Software Development Cycle. The various sections each provide details on specific types of requirements of the application.\newline \newline The intended audience include developers/peers(Team Indigo and other COS 301 teams), domain experts(COS 301 Lectures and the University of Pretoria Management), customers/end-users(students, staff and visitors at the University of Pretoria) who will perform a technical, expert  and customer review of this document respectively. }
 \subsection{Scope}
-\paragraph*{The name of the proposed software application is NavUP (NavigationUP). NavUP is intended to be an information service application that is to provide navigational information to visitors, employees and students of the University of Pretoria. This includes usual navigational functions (mapping and routing of campus), surveillance, user based information delivery and event calenders. NavUP will not extend its functionalities outside the Hatfield Campus and the University of Pretoria will not take any responsibility for any injury, damage or whatsoever that may be a result of the application. The application is used at your own risk.\newline \newline The objectives of the product include making the University of Pretoria feel more "like home" to all stakeholders alike. The application aims to facilitate a wide range of users who have had difficulties in the past with regard travelling within the premises. Ease of travel, accessibility of the various facilities, time optimisations, event/day-to-day coordination's, alleviating pedestrian traffic congestion problems, description of activities etc. are the joint objectives of the project.\newline \newline The goal is to integrate existing applications within the university like the Wi-Fi hotspots, IT-Services, Official University Website, Social Media and more.  Another goal is for the application to make use of human resources for its development and usage i.e. expertise from the COS 301, Honours groups of students and lectures to satisfy the former and make use of crowd-sourcing principles (using smart devices) to serve the latter. \newline \newlineThe benefits include smoothness of the day-to-day operations at the University which leads to greater productivity and efficiency among students and staff alike. It allows the university to increase its brand value in terms of the facilities it provides to keep external stakeholders pleased. National and Global Rankings of the university are bound to rise and consequently attract a larger group of people in the long run.}
+\paragraph*{The name of the proposed software application is NavUP (NavigationUP). NavUP is intended to be an information service application that is to provide navigational information to visitors, employees and students of the University of Pretoria. This includes usual navigational functions (mapping and routing of campus), surveillance, user based information delivery and event calenders. NavUP will not extend its functionalities outside the Hatfield Campus and the University of Pretoria will not take any responsibility for any injury, damage or whatsoever that may be a result of the application. The application is used at your own risk.\newline \newline The objectives of the product include making the University of Pretoria feel more "like home" to all stakeholders alike. The application aims to facilitate a wide range of users who have had difficulties in the past with regard travelling within the premises. Ease of travel, accessibility of the various facilities, time optimisations, event/day-to-day coordination's, alleviating pedestrian traffic congestion problems, description of activities etc. are the joint objectives of the project.\newline \newline The goal is to integrate existing applications within the university like the Wi-Fi hotspots, IT-Services, Official University Website, Social Media and more.  Another goal is for the application to make use of human resources for its development and usage i.e. expertise from the COS 301, Honours groups of students and lectures to satisfy the former and make use of crowd-sourcing principles (using smart devices) to serve the latter. \newline \newline The benefits include smoothness of the day-to-day operations at the University which leads to greater productivity and efficiency among students and staff alike. It allows the university to increase its brand value in terms of the facilities it provides to keep external stakeholders pleased. National and Global Rankings of the university are bound to rise and consequently attract a larger group of people in the long run.}
 \subsection{Definitions, Acronyms, and Abbreviations}
 \paragraph{\textbf{Acronyms}}
 \begin{enumerate}
@@ -175,12 +175,12 @@ includefoot
 The factors that affect the requirements are:
 \begin{itemize}
 	 
-		\item Lack of connectivity -  Wi-Fi isn't available everywhere on campus (e.g. I.T building). thus assuming that Wi-Fi on campus will essentially be available everywhere in due time, and/or mobile network fall-back is assumed.
+		\item Lack of connectivity -  Wi-Fi isn't available everywhere on campus (e.g. I.T building). Thus, assuming that Wi-Fi on campus will essentially be available everywhere in due time, and/or mobile network fall-back is assumed.
 		
-		\item Mobile devices - it is assumed that a user will have a mobile device that can run the application specifically run the newer versions of Android, IOS and Windows Mobile. We assumed that the mobile device was powerful enough to draw maps and emulate navigation.
-		\item Server - the application depends on running on a remote server where the mobile application can authenticate and gain essential information to navigation.
+		\item Mobile devices - It is assumed that a user will have a mobile device that can run the application; it must specifically be able to run the newer versions of Android, IOS and Windows Mobile. We assumed that the mobile device was powerful enough to draw maps and emulate navigation.
+		\item Server - The application depends on running on a remote server where the mobile application can authenticate and gain essential information to navigation.
 		
-		\item Hotspots - we assumed that the Wi-Fi Hotspots on campus will be forever lasting and we depend on this AP to triangulate and refine navigation on the application.
+		\item Hotspots - We assumed that the Wi-Fi Hotspots on campus will be forever lasting and we depend on this application to triangulate and refine navigation on the application.
 	 
 \end{itemize}
 % END Avinash
@@ -217,21 +217,19 @@ The factors that affect the requirements are:
 
 \item Clicking/pressing (input) on the direction symbol will open up two different fields: a starting point and destination field. Both fields accept the same input and are constrained by the same error-checking as was for the map query function.
 
-\item The route from the starting point to the end point (both encircled) will be highlighted on the map with a bold colour and the section of the map will come into focus as soon as the search button is clicked/pressed.
+\item The route from the starting point to the end point (both encircled) will be highlighted on the map (output) with a bold colour and the section of the map will come into focus as soon as the search button is clicked/pressed (input).
 
-\item The application will map the user (represented by his electronic device) with regard to his proximity to a Wireless Router (all users making use of the Hatfield Wi-Fi are mapped in this way). NavUP will provide the user with turn-by-turn navigation directions towards their destination as they move with their device and the device connects to various Wi-Fi routers – both in terms of a moving Stick Man and automated voice instructions.
+\item The application will map (processing) the user (represented by his electronic device) with regard to his proximity to a Wireless Router (all users making use of the Hatfield Wi-Fi are mapped in this way). NavUP will provide the user with turn-by-turn navigation directions towards their destination as they move with their device (input) and the device connects to various Wi-Fi routers (processing) – both in terms of a moving Stick Man and automated voice instructions (output).
 
-\item The application will make re-routing possible if the user does not move in the initial prescribed route.
+\item The application will make re-routing possible if the user does not move in the initial prescribed route (processing new directions).
 
-\item Distance costs of the various routes will be displayed by the software and the user has to make an initial choice on which route they would like to follow.
+\item Distance costs of the various routes will be displayed by the software (output) and the user has to make an initial choice on which route they would like to follow (input).
 
-\item The application will provide the user with the option of changing between a default physical map and a traffic congestion (heat) map by means of a toggle button.
+\item The application will provide the user with the option of changing between a default physical map and a traffic congestion (heat) map by means of a toggle button(input).
 
-\item NavUP provides the integration of traffic congestion information with routing (a checkbox is provided to enable this feature before the routing is processed) to allow users to choose routes where there is a less gathering of people (in terms of number of Wi-Fi connections alternative options are suggested).
+\item NavUP provides the integration of traffic congestion information with routing (a checkbox input is provided to enable this feature before the routing is processed) to allow users to choose routes where there is a less gathering of people (in terms of number of Wi-Fi connections alternative options are suggested).
 
-\item The application also integrates with the UP Fitness Trail route – directional information together with monitoring an embedded stopwatch is provided for this feature. Users will be able to save their progress to their accounts.
-
-\item 
+\item The application also integrates with the UP Fitness Trail route – directional information together with monitoring an embedded stopwatch (runs on the foreground as output) is provided for this feature. Users will be able to save their progress to their accounts (database processing on click of save button input).
 
 \end{itemize}
 
@@ -241,10 +239,10 @@ The factors that affect the requirements are:
 
 \begin{itemize}
 
-\item The application will have a tab which displays a calendar of events (special guest lectures, music and dance festivals, religious gatherings, graduation ceremonies, meetings, information sessions etc.).
-\item The user can interact with the calendar clicking on specific events or dates to set remainders.
-\item When connected to the internet, the user can get a push notification slide down from the top of the screen when the event date has occurred.
-\item The application allows the user to then click on “Show event route”, which provides the various mapping and routing options described above.
+\item The application will have a tab (click on the tab as input) which displays (output) a calendar of events (special guest lectures, music and dance festivals, religious gatherings, graduation ceremonies, meetings, information sessions etc.).
+\item The user can interact with the calendar clicking on specific events or dates to set remainders ("SAVE THIS DATE" checkbox).
+\item When connected to the internet, the user can get a push notification slide down from the top of the screen when the event date has occurred (processing is always taking place in the background in order to check which user events are active on a specific date).
+\item The application allows the user to then click on “Show event route”, which provides the various mapping and routing options described above as output.
 
 \end{itemize}
 
@@ -261,7 +259,7 @@ The factors that affect the requirements are:
 
 \item User Location Determination\\The coordination of the WiFi hotspots in determining user location should be to a precision that allows an error-rate of no more than 7 metres.
 
-\item Re-Routing\\A time-elapse of no more than 30 seconds is allowed when the system has to re-calculate the routes.
+\item Re-Routing\\A time-elapse of no more than 5 seconds is allowed when the system has to re-calculate the routes.
 
 \item Capacity\\The system must have the ability to handle requests from a minimum of 1000 users. Around 10000 requests can be made to the user on average in a day.
 
@@ -286,7 +284,7 @@ The system and application should be reliable in the fact that the user should b
 Although security is not a key feature, the system should protect any personal information by hashing passwords with a secure hashing algorithm such as SHA-256 or SHA-512 and not leak any information from the system or application. The application should have access to the users Wi-Fi connections as well as cellular fall-back for enhanced navigation and even GPS. The system or application should not store any Wi-Fi information from the device or pull user-names and passwords from the users device and leak it.
 We will achieve security by making use of 3 methods, namely: prevention, detection, and recovery. We will ensure that we have put means in
 place through which we may be able to detect any threats to the system,
-for example validating any information that is required to be sent to the
+for example, validating any information that is required to be sent to the
 server. Preventing threats to the system can be enforced through limiting the access channels, making use of authentication, not allowing any
 external sources to be accessed through the system, etc. Recovery will be
 achieved through cancelling requests and maintaining a working back up
@@ -298,18 +296,18 @@ state to roll back changes.
 \paragraph{\textbf{Flexibility} \\}
  An important element of the system is its flexibility. 
  Each component of the system should be decoupled from every other component, thus allowing you to change certain components without affecting anything else. 
- For example it should be easy to add a new Lecture Venue to the system with little or no code modifications. 
+ For example, it should be easy to add a new Lecture Venue to the system with little or no code modifications. 
  The main focus of the software is to allow the user to easily navigate to his/her destination with minimal effort.
- In spite of this the navigation route should be flexible in the sense there could be many different routes that the user can take and the system should be able to redirect or find another or even the best route that is in the users radius.
+ In spite of this, the navigation route should be flexible in the sense there could be many different routes that the user can take and the system should be able to redirect or find another or even the best route that is in the users radius.
 
 \paragraph{\textbf{Maintainability} \\}
  The system needs to be maintainable so that the future prospects of this system can expand to other campuses and in doing so code should be modular and well documented. Software and frameworks to be used should have a wide range of support and be established aiding the maintainability of the system.
 
 \paragraph{\textbf{Scalability} \\}
- The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft Windows Mobile with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even Augmented reality for the ultimate user experience.
+ The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft Windows Mobile with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even augmented reality for the ultimate user experience.
 
 \paragraph{\textbf{Auditability} \\}
- The system and application should make use of logs so that if there are any  queries or faults it can easily be traced or detected. These logs will also log navigational information, and for future prospects a user can opt in to share their experience where these log files from the application could be sent to a remote server where the developers can analyse this data to improve the system. \\The following is necessary to be logged:
+ The system and application should make use of logs so that if there are any queries or faults it can easily be traced or detected. These logs will also log navigational information, and for future prospects a user can opt in to share their experience where these log files from the application could be sent to a remote server where the developers can analyse this data to improve the system. \\The following is necessary to be logged:
  \begin{itemize}
  	\item Program crashes
  	\item Navigation route (source and destination and some meta data [e.g. Time taken, estimated distance, etc.])
