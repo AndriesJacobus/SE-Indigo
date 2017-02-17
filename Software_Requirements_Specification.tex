@@ -276,7 +276,38 @@ The NavUP application will provide the user with an interactive graphical map of
 \end{itemize}
 
 \subsection{Performance Requirements}
-\paragraph{...}
+
+\let\labelitemi\labelitemii
+
+\noindent \\ Real-Time Processing
+
+\begin {itemize}
+Map Search Algorithm
+\item The search algorithm should be efficient – keywords specified by the user needs to be hashed to find the location on the map. A time-complexity of Big-O(1) is achieved. A hash-table with possible keywords need to be mathced to locations on the map.
+
+Directional Search Algorithm
+\item The routes determined must be least cost routes in terms of distance and in terms of traffic rates – Djikstra’s algorthim.
+
+User Location Determination
+\item The coordination of the WiFi hotspots in determining user location should be to a precision that allows an error-rate of no more than 7 metres.
+
+Re-Routing
+\item A time-elapse of no more than 30 seconds is allowed when the system has to re-calculate the routes.
+
+Capacity
+\item The system must have the ability to handle requests from a minimum of 1000 users. Around 10000 requests can be made to the user on average in a day.
+
+Interactive
+\item The system must be interactive and the delays involved must be less. 
+
+Error Correction
+\item
+
+System Dependability
+\item If the system loses the connection to the Internet or to the GPS device or the system gets some strange input, the user should be informed.
+
+\end{itemize}
+
 \subsection{Design Constraints}
 \paragraph{...}
 
