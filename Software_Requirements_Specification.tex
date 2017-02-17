@@ -196,7 +196,42 @@ The factors that affect the requirements are:
 \subsection{Functional Requirements}
 
 %\let\labelitemi\labelitemii
+\subsubsection{Use Cases}
 1. Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:
+
+ 
+
+\subsubsection{User Login}
+\textbf{Description:}  The application will be linked to UP students and staff accounts. These specific users can log-in to the application and will be given the privileges of saving locations (database save) by an input of pinning - pinpoint locations manually by clicking (input) the marker icon and placing it directly onto the map. Locations of modules which the user has registered for will automatically be pinned. The output will be that of a red pin on the location which was scrolled over.\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+ 	\item A user must have a connection to the server.
+  	\item A user must be registered with the University (staff/student).
+  	\item The user must enter the correct information in order for the authentication to be successful.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item The user has specific access to the server on which all data is stored, i.e add/edit locations, meta-data and search locations, buildings, rooms etc.
+  	\item The user is able to use all the user functionality provided by the system 
+  	\item The user may log out of the system when they wish to.
+\end{itemize}
+  
+\begin{figure}[H]
+  	\centering
+  		\includegraphics[width=0.7\textwidth]{LoginServicesContract.jpg}
+  	\caption{Service Contract: User Login}
+\end{figure}
+\begin{figure}[H]
+   	\centering
+   	\includegraphics[width=0.7\textwidth]{LoginActorSystem.jpg}
+   	\caption{Actor System: User Login}
+\end{figure}
+  
 
 \begin{itemize}
 
@@ -204,7 +239,8 @@ The factors that affect the requirements are:
 
 \item The application will provide a map query feature by means of a search bar input. Input can range from names of buildings, lecture halls, faculties, schools, departments, restaurants and coffee shops, shops, laboratories, libraries, study centres, offices, toilets,  parking facilities, gate numbers, streets and student organisations and day houses. NavUP will auto-scroll the map to the location as output if identification is successful. Otherwise, it will provide you with “Did you mean to say …” options or “Location could not be found” output (error output).
 
-\item The application will be linked to UP students and staff accounts. These specific users can log-in to the application and will be given the privileges of saving locations (database save) by an input of pinning - pinpoint locations manually by clicking (input) the marker icon and placing it directly onto the map. Locations of modules which the user has registered for will automatically be pinned. The output will be that of a red pin on the location which was scrolled over.
+
+
 
 \item NavUP will allow more prominent locations to be clicked (input) after which a pop-up (output) will appear with any one or both of the following: a general description of the location and information about activities and events set to take place there.
 
@@ -215,7 +251,6 @@ The factors that affect the requirements are:
 %\let\labelitemi\labelitemii
 
 \noindent \\2. A Directional Search is feature will be provided by the application and will contain the following functionality:
-
 \begin{itemize}
 
 \item Clicking/pressing (input) on the direction symbol will open up two different fields: a starting point and destination field. Both fields accept the same input and are constrained by the same error-checking as was for the map query function.
@@ -276,14 +311,14 @@ The factors that affect the requirements are:
 \paragraph{...}
 
 % BEGIN Avinash
- \subsection{Software System Attributes}
-\subsubsection{Quality Requirements \\}
+\subsection{Software System Attributes}
+\subsubsection{Quality Requirements }
 The following section will focus on the quality requirements of the overall system and mobile application at its highest level of granularity. All the requirements defined, are for all components of the system.
 
-\paragraph{\textbf{Reliability} \\}
+\paragraph{\textbf{Reliability}\\}
 The system and application should be reliable in the fact that the user should be able to reach his/her destination and that the information provided by the system and application is accurate and authentic. The system should always be on-line and provide the expected functionality without errors or discrepancies. The system should also provide additional information aiding the reliability by giving a short description or history of the building or venue to make it more reliable and accurate. 
 
-\paragraph{\textbf{Security} \\}
+\paragraph{\textbf{Security}\\}
 Although security is not a key feature, the system should protect any personal information by hashing passwords with a secure hashing algorithm such as SHA-256 or SHA-512 and not leak any information from the system or application. The application should have access to the users Wi-Fi connections as well as cellular fall-back for enhanced navigation and even GPS. The system or application should not store any Wi-Fi information from the device or pull user-names and passwords from the users device and leak it.
 We will achieve security by making use of 3 methods, namely: prevention, detection, and recovery. We will ensure that we have put means in
 place through which we may be able to detect any threats to the system,
@@ -321,7 +356,7 @@ state to roll back changes.
  The mobile application should be easy to use and adhere to UI/UX standards with regards to the layout and user interfaces for interaction. The application should have easy navigation between functionality and views, as well as a intuitive way to display or simulate the user navigating to his/her destination on the map.
  
  
- \paragraph{\textbf{Performance} \\}
+\paragraph{\textbf{Performance} \\}
 The performance of a system refers to the behaviour of the system in
 terms of response time and throughput. Changes and modifications to
 the system should be done in the most cost and time effective manner to
