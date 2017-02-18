@@ -174,7 +174,7 @@ The rest of this document will be solely focussed on elaborating on the requirem
 \subsection{Constraints}
 \paragraph{...}
 
-% BEGIN Avinash
+ 
 \subsection{Assumptions and Dependencies}
 %\let\labelitemi\labelitemii
 The factors that affect the requirements are:
@@ -188,7 +188,7 @@ The factors that affect the requirements are:
 		\item Hotspots - We assumed that the Wi-Fi Hotspots on campus will be forever lasting and we depend on this application to triangulate and refine navigation on the application.
 	 
 \end{itemize}
-% END Avinash
+ 
 
 
 \section{Specific Requirements}
@@ -218,11 +218,6 @@ The factors that affect the requirements are:
 \end{itemize}
   
 \begin{figure}[H]
-  	\centering
-  		\includegraphics[width=0.7\textwidth]{LoginServicesContract.jpg}
-  	\caption{Service Contract: User Login}
-\end{figure}
-\begin{figure}[H]
    	\centering
    	\includegraphics[width=0.7\textwidth]{LoginActorSystem.jpg}
    	\caption{Actor System: User Login}
@@ -245,7 +240,8 @@ The factors that affect the requirements are:
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE
+%  	\item NONE
+	\item The map will be moved to the position where the user scrolled. 
 \end{itemize}
 
 \subsubsection{Map Zoom}
@@ -262,7 +258,8 @@ The factors that affect the requirements are:
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE
+%  	\item NONE
+	\item The map will zoomed in/out the amount the user pinched on the screen. 
 \end{itemize}
 
 \subsubsection{Map Query}
@@ -556,7 +553,7 @@ The route from the starting point to the end point (both encircled) will be high
 \subsection{Design Constraints}
 \paragraph{...}
 
-% BEGIN Avinash
+ 
 \subsection{Software System Attributes}
 \subsubsection{Quality Requirements }
 The following section will focus on the quality requirements of the overall system and mobile application at its highest level of granularity. All the requirements defined, are for all components of the system.
@@ -611,8 +608,7 @@ is visible to the user is to make use of feedback tools to ensure the user
 is aware that the system is performing as expected or to notify the users
 should something have gone wrong.
 
-% END Avinash
-
+ 
 
 \subsection{Other Requirements}
 \paragraph{...}
