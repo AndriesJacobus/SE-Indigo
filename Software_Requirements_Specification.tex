@@ -136,6 +136,7 @@ The name of the proposed software application is NavUP (NavigationUP). NavUP is 
 \begin{enumerate}
 	\item STD - Standard
 	\item App - Application
+	\item Info - Information
 \end{enumerate}
 
 \subsection{References}
@@ -195,14 +196,8 @@ The factors that affect the requirements are:
 \paragraph{...}
 \subsection{Functional Requirements}
 
-%\let\labelitemi\labelitemii
-\subsubsection{Use Cases}
-1. Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:
-
- 
-
 \subsubsection{User Login}
-\textbf{Description:}  The application will be linked to UP students and staff accounts. These specific users can log-in to the application and will be given the privileges of saving locations (database save) by an input of pinning - pinpoint locations manually by clicking (input) the marker icon and placing it directly onto the map. Locations of modules which the user has registered for will automatically be pinned. The output will be that of a red pin on the location which was scrolled over.\\\\
+\textbf{Description:}  The application will provide the ability for users to login. Students and staff have their UP Portal accounts linked to the NavUP system database will input thier respective username and password. Guests/Visitors will click "Guest Log-in" instead of credentials. The system database will verify the credentials (processing) and output returns to the current screen on "error" or the application home page on "success".\\\\
 \noindent
 \textbf{Prioritisation:} Important\\
   
@@ -210,14 +205,14 @@ The factors that affect the requirements are:
 \textbf{Pre-conditions}
 \begin{itemize}
  	\item A user must have a connection to the server.
-  	\item A user must be registered with the University (staff/student).
+  	\item A user must be registered with the University (staff/student), or be a visitor within the Hatfield premisis.
   	\item The user must enter the correct information in order for the authentication to be successful.
 \end{itemize}
   
 \textbf{Post-conditions}
 \begin{itemize}
   	\item The user has specific access to the server on which all data is stored, i.e add/edit locations, meta-data and search locations, buildings, rooms etc.
-  	\item The user is able to use all the user functionality provided by the system 
+  	\item The user is able to use all the user functionality provided by the system. 
   	\item The user may log out of the system when they wish to.
 \end{itemize}
   
@@ -233,20 +228,115 @@ The factors that affect the requirements are:
 \end{figure}
   
 
+1. Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:
+
+\subsubsection{Map Scroll}
+
+\textbf{Description:}  The application will accept user input (a pointing device or touch screen) which can be processed to produce output of scrolling the map around and within its boundaries and viewing the various symbolic representations of the University premises.\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
 \begin{itemize}
-
-\item The application will accept user input (a pointing device or touch screen) which can be processed to produce output of scrolling the map around and within its boundaries and viewing the various symbolic representations of the University premises.
-
-\item The application will provide a map query feature by means of a search bar input. Input can range from names of buildings, lecture halls, faculties, schools, departments, restaurants and coffee shops, shops, laboratories, libraries, study centres, offices, toilets,  parking facilities, gate numbers, streets and student organisations and day houses. NavUP will auto-scroll the map to the location as output if identification is successful. Otherwise, it will provide you with “Did you mean to say …” options or “Location could not be found” output (error output).
-
-
-
-
-\item NavUP will allow more prominent locations to be clicked (input) after which a pop-up (output) will appear with any one or both of the following: a general description of the location and information about activities and events set to take place there.
-
-\item NavUP will provide the users with a toggle button (input) to switch between normal map view as described above and a traffic congestion map (hot-zone map) – this map is coloured according to the relative traffic flow in various parts of campus (in shades of red) taking into account the number of Wi-Fi-users in and around hotspots in the particular area.
-
+ 	\item A user must have a working touch screen sensitivity or a pointing device.
 \end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE
+\end{itemize}
+
+\subsubsection{Map Zoom}
+
+\textbf{Description:}  The application will accept user input of pinching the screen (Two fingers on the edges of a map are spread apart to enlarge the images or brought together to make the map smaller). The processing will be of the positions on the screen of the fingers and output will be a screen image which has changed size.\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+ 	\item A user must have a working touch screen sensitivity or a pointing device.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE
+\end{itemize}
+
+\subsubsection{Map Query}
+
+\textbf{Description:}  The application will provide a map query feature by means of a search bar input. Input can range from names of buildings, lecture halls, faculties, schools, departments, restaurants and coffee shops, shops, laboratories, libraries, study centres, offices, toilets,  parking facilities, gate numbers, streets and student organisations and day houses. NavUP will auto-scroll the map to the location as output if identification is successful. Otherwise, it will provide you with “Did you mean to say …” options or “Location could not be found” output (error output).\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+ 	\item The user must be connected to the server for the input to be processed.
+	\item The input must be keywords which are short and precise for successful identification.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item The user has the ability to either choose from a list of options or the system state moves to representing the user's search.
+\end{itemize}
+
+\subsubsection{Save Map Location}
+
+\textbf{Description:}  The application will give users the privileges of saving locations (database save) by an input of pinning - pinpoint locations manually by clicking (input) the marker icon and placing it directly onto the map. Locations of modules which the user has registered for will automatically be pinned. The output will be that of a red pin on the location which was scrolled over.\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+ 	\item The user must be connected to the server during the pinning operation.
+	\item The user should be a student or staff member to exercise this feature - visitors have no active account for a databse save.
+	\item Registration of modules should have taken place at least 24 hours before the application can auto-pin the modules.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item The user will have a record corresponding to his student/staff number for this pin operation in the database.
+\end{itemize}
+
+\subsubsection{See Location Information}
+
+\textbf{Description:}  NavUP will allow more prominent locations to be clicked (input) after which a pop-up (output) will appear with any one or both of the following: a general description of the location and information about activities and events set to take place there.\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+ 	\item The feature is limited to important locations (academic hubs, cultural sites).
+	\item The user must be connected to the server for information to be retrieved.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE
+\end{itemize}
+
+\subsubsection{Change Map Type}
+
+\textbf{Description:}  NavUP will provide the users with a toggle button (input) to switch between normal map view as described above and a traffic congestion map (hot-zone map) – this map is coloured according to the relative traffic flow in various parts of campus (in shades of red) taking into account the number of Wi-Fi-users in and around hotspots in the particular area.\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+ 	\item The WiFi must be up and running for the traffic congestion map to be displayed.
+	\item The user must be connected to the server for information to be retrieved.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item Map state changes depending on the type of map being viewed.
+\end{itemize}
+
 
 %\let\labelitemi\labelitemii
 
