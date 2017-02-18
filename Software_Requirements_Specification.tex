@@ -228,7 +228,7 @@ The factors that affect the requirements are:
 \end{figure}
   
 
-1. Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:
+\noindent Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:
 
 \subsubsection{Map Scroll}
 
@@ -340,30 +340,103 @@ The factors that affect the requirements are:
 
 %\let\labelitemi\labelitemii
 
-\noindent \\2. A Directional Search is feature will be provided by the application and will contain the following functionality:
+\noindent \\A Directional Search is feature will be provided by the application and will contain the following functionality:
+
+
+\subsubsection{Highlight Directions on Map}
+
+\textbf{Description:}  Clicking/pressing (input) on the direction symbol will open up two different fields: a starting point and destination field. Both fields accept the same input and are constrained by the same error-checking as was for the map query function.
+The route from the starting point to the end point (both encircled) will be highlighted on the map (output) with a bold colour and the section of the map will come into focus as soon as the search button is clicked/pressed (input).\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
 \begin{itemize}
-
-\item Clicking/pressing (input) on the direction symbol will open up two different fields: a starting point and destination field. Both fields accept the same input and are constrained by the same error-checking as was for the map query function.
-
-\item The route from the starting point to the end point (both encircled) will be highlighted on the map (output) with a bold colour and the section of the map will come into focus as soon as the search button is clicked/pressed (input).
-
-\item The application will map (processing) the user (represented by his electronic device) with regard to his proximity to a Wireless Router (all users making use of the Hatfield Wi-Fi are mapped in this way). NavUP will provide the user with turn-by-turn navigation directions towards their destination as they move with their device (input) and the device connects to various Wi-Fi routers (processing) – both in terms of a moving Stick Man and automated voice instructions (output).
-
-\item The application will make re-routing possible if the user does not move in the initial prescribed route (processing new directions).
-
-\item Distance costs of the various routes will be displayed by the software (output) and the user has to make an initial choice on which route they would like to follow (input).
-
-\item The application will provide the user with the option of changing between a default physical map and a traffic congestion (heat) map by means of a toggle button(input).
-
-\item NavUP provides the integration of traffic congestion information with routing (a checkbox input is provided to enable this feature before the routing is processed) to allow users to choose routes where there is a less gathering of people (in terms of number of Wi-Fi connections alternative options are suggested).
-
-\item The application also integrates with the UP Fitness Trail route – directional information together with monitoring an embedded stopwatch (runs on the foreground as output) is provided for this feature. Users will be able to save their progress to their accounts (database processing on click of save button input).
-
+	\item The user must be connected to the server for information to be retrieved.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item Map state changes depending on the type of map being viewed.
 \end{itemize}
 
-%\let\labelitemi\labelitemii
 
-\noindent \\3. NavUP will is based on a “push technology” model and as a result provides the following functionality:
+\begin{itemize}
+
+\subsubsection{Turn-By-Turn Navigation}
+
+\textbf{Description:}  The application will map (processing) the user (represented by his electronic device) with regard to his proximity to a Wireless Router (all users making use of the Hatfield Wi-Fi are mapped in this way). NavUP will provide the user with turn-by-turn navigation directions towards their destination as they move with their device (input) and the device connects to various Wi-Fi routers (processing) – both in terms of a moving Stick Man and automated voice instructions (output).\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item The user must be connected to the server for information to be retrieved.
+	\item The user must have in-built speakers or earphones to be able to hear the instructions.
+	\item All WiFi hotpsots must be working for triangulation to take place.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE.
+\end{itemize}
+
+\subsubsection{Automatic Re-Route}
+
+\textbf{Description:}  The application will make re-routing possible if the user does not move in the initial prescribed route (processing new directions). Input is that of moving with the device in the wrong direction. Distance costs of the various routes will be displayed by the software (output) and the user has to make an initial choice on which route they would like to follow (input).\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item The user must be connected to the server for information to be retrieved.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE.
+\end{itemize}
+
+\subsubsection{Route Without Traffic}
+
+\textbf{Description:}  NavUP provides the integration of traffic congestion information with routing (a checkbox input is provided to enable this feature before the routing is processed) to allow users to choose routes where there is a less gathering of people (in terms of number of Wi-Fi connections alternative options are suggested).\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item The user must be connected to the server for information to be retrieved.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE.
+\end{itemize}
+
+\subsubsection{Monitor Fitness}
+
+\textbf{Description:} The application also integrates with the UP Fitness Trail route – directional information together with monitoring an embedded stopwatch (runs on the foreground as output) is provided for this feature. Users will be able to save their progress to their accounts (database processing on click of save button input).\\\\
+\noindent
+\textbf{Prioritisation:} Important\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item The user must be connected to the server for information to be retrieved.
+	\item This feature is only available to UP staff and students.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item The user should have completed the fitness trial.
+	\item The stopwatch returns to initial state.
+\end{itemize}
+
+\noindent \\NavUP will is based on a “push technology” model and as a result provides the following functionality:
 
 \begin{itemize}
 
