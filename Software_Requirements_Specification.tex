@@ -130,6 +130,7 @@ The name of the proposed software application is NavUP (NavigationUP). NavUP is 
 	\item NavUP - Navigation University of Pretoria
 	\item 2D - Two Dimensional
 	\item 3D - Three Dimensional
+	\itme SRC - Student Representative Council
 \end{enumerate}
 
 \paragraph{\textbf{Abbreviations}}
@@ -228,7 +229,7 @@ The factors that affect the requirements are:
 \end{figure}
   
 
-\noindent Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:
+\noindent \underline{Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:}
 
 \subsubsection{Map Scroll}
 
@@ -340,7 +341,7 @@ The factors that affect the requirements are:
 
 %\let\labelitemi\labelitemii
 
-\noindent \\A Directional Search is feature will be provided by the application and will contain the following functionality:
+\noindent \\ \underline{A Directional Search is feature will be provided by the application and will contain the following functionality:}
 
 
 \subsubsection{Highlight Directions on Map}
@@ -433,16 +434,95 @@ The route from the starting point to the end point (both encircled) will be high
 	\item The stopwatch returns to initial state.
 \end{itemize}
 
-\noindent \\NavUP will is based on a “push technology” model and as a result provides the following functionality:
+\noindent \\ \underline{NavUP will is based on a “push technology” model and as a result provides the following functionality:}
 
+\subsubsection{View Calendar}
+
+\textbf{Description:} The application will have a tab (click on the tab as input) which displays (output) a calendar of events (special guest lectures, music and dance festivals, religious gatherings, graduation ceremonies, meetings, information sessions etc.).\\\\
+\noindent
+\textbf{Prioritisation:} Medium Priority\\
+  
+  
+\textbf{Pre-conditions}
 \begin{itemize}
-
-\item The application will have a tab (click on the tab as input) which displays (output) a calendar of events (special guest lectures, music and dance festivals, religious gatherings, graduation ceremonies, meetings, information sessions etc.).
-\item The user can interact with the calendar clicking on specific events or dates to set remainders ("SAVE THIS DATE" checkbox).
-\item When connected to the internet, the user can get a push notification slide down from the top of the screen when the event date has occurred (processing is always taking place in the background in order to check which user events are active on a specific date).
-\item The application allows the user to then click on “Show event route”, which provides the various mapping and routing options described above as output.
-
+	\item The University of Pretoria should integrate thier calendar with that of NavUP.
+	\item All events must be communicated to the system administrator for them to be displayed.
 \end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE
+\end{itemize}
+
+\subsubsection{Set Reminder}
+
+\textbf{Description:} The user can interact with the calendar by clicking on specific events or dates to set remainders ("SAVE THIS DATE" checkbox). The output is of the date being highlighted on calendar view.\\\\
+\noindent
+\textbf{Prioritisation:} Medium Priority\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item The user must be a staff member or a student of UP.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE
+\end{itemize}
+
+\subsubsection{Push Notifications}
+
+\textbf{Description:} When connected to the WiFi, the user can get a push notification slide down from the top of the screen when the event date has occurred (processing is always taking place in the background in order to check which user events are active on a specific date).\\\\
+\noindent
+\textbf{Prioritisation:} Medium Priority\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item The user must be a staff member or a student of UP.
+	\item Push Notifications must be enabled.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item The user has the abiltiy to act on this notification i.e. clear it or ask for directions to the venue mentioned on it.
+\end{itemize}
+
+\subsubsection{Show event route}
+
+\textbf{Description:} The application allows the user to then click on “Show event route”, which provides the various mapping and routing options described above as output.\\\\
+\noindent
+\textbf{Prioritisation:} Medium Priority\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item NONE.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE.
+\end{itemize}
+
+\subsubsection{Add An Event}
+
+\textbf{Description:} The application allows an event to be added. Input includes name of event, date, venue, purpose, targeted auidence, dress code, time and event capacity. The event will be added to the events database table (processing). Output will be visible in "View Calendar".\\\\
+\noindent
+\textbf{Prioritisation:} Medium Priority\\
+  
+  
+\textbf{Pre-conditions}
+\begin{itemize}
+	\item Only staff memebers, members of SRC and managment can add events.
+\end{itemize}
+  
+\textbf{Post-conditions}
+\begin{itemize}
+  	\item NONE.
+\end{itemize}
+
 
 \subsection{Performance Requirements}
 
