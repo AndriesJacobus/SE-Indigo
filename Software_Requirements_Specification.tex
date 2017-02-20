@@ -125,7 +125,7 @@ The name of the proposed software application is NavUP (NavigationUP). NavUP is 
 	\item SRS - Software Requirements Specification
 	\item IEEE - Institute of Electrical and Electronic Engineers 
 	\item UP - University of Pretoria
-	\item IOS - iPhone Operating System 
+	\item iOS - iPhone Operating System 
 	\item IT - Information Technology
 	\item NavUP - Navigation University of Pretoria
 	\item 2D - Two Dimensional
@@ -172,14 +172,17 @@ The rest of this document will be solely focussed on elaborating on the requirem
 \begin{itemize}
 	\item NavUP applications will use the Java JDK and the Android SDK tools. For iOS Objective-C or Xamarin will be used.
 	
+	\item NavUP application could also make use of web-to-mobile frameworks such as Ionic - which is a cross platform development framework that supports Android, iOS and Windows Mobile.
+	
 \end{itemize}
 \subsubsection{Communication Interfaces}
 \begin{itemize}
-	\item 	The NavUp application could use a HTTP server which uses a push protocol to push notifications onto the device.
+	\item 	The NavUp application could use a HTTP server which uses a push protocol to push notifications onto the device. Another means of communication is by consuming the RESTful API/Service that the back-end system will provide.
 \end{itemize}
 \subsubsection{Memory}
 \begin{itemize}
 	\item For Android, it should be able to work on Android 4.23.0 to the latest version which is 7.0. For iOS, it should be able to work from 7.0 and later.
+	\item The application would need a considerate amount of memory to run since it needs to process and emulate maps and navigation which is graphically intensive.
 	
 \end{itemize}
 \subsubsection{Operations}
@@ -208,7 +211,7 @@ The factors that affect the requirements are:
 	 
 		\item Lack of connectivity -  Wi-Fi isn't available everywhere on campus (e.g. I.T building). Thus, assuming that Wi-Fi on campus will essentially be available everywhere in due time, and/or mobile network fall-back is assumed.
 		
-		\item Mobile devices - It is assumed that a user will have a mobile device that can run the application; it must specifically be able to run the newer versions of Android, IOS and Windows Mobile. We assumed that the mobile device was powerful enough to draw maps and emulate navigation.
+		\item Mobile devices - It is assumed that a user will have a mobile device that can run the application; it must specifically be able to run the newer versions of Android, iOS and Windows Mobile. We assumed that the mobile device was powerful enough to draw maps and emulate navigation.
 		\item Server - The application depends on running on a remote server where the mobile application can authenticate and gain essential information to navigation.
 		
 		\item Hotspots - We assumed that the Wi-Fi Hotspots on campus will be forever lasting and we depend on this application to triangulate and refine navigation on the application.
@@ -632,7 +635,7 @@ Requirements      & Priority      & UC9 & UC10 & UC11 & UC12 & UC13 & UC14 & UC1
 \begin{figure}[H]
    	\centering
    	\includegraphics[width=0.7\textwidth]{UserManagement.jpg}
-   	\caption{User Managment Sub-System of NavUP}
+   	\caption{User Management Sub-System of NavUP}
 \end{figure}
 
 \begin{figure}[H]
@@ -650,7 +653,7 @@ Requirements      & Priority      & UC9 & UC10 & UC11 & UC12 & UC13 & UC14 & UC1
 \begin{figure}[H]
    	\centering
    	\includegraphics[width=0.7\textwidth]{ActivitiesAndEventsManagement.jpg}
-   	\caption{Activities and Events Managment Sub-System of NavUP}
+   	\caption{Activities and Events Management Sub-System of NavUP}
 \end{figure}
 
 
@@ -664,7 +667,7 @@ Requirements      & Priority      & UC9 & UC10 & UC11 & UC12 & UC13 & UC14 & UC1
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{2}{|l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Precondition: The user should have registered at the university \\ or be a guest in the vicinity of the university.\end{tabular}}}                                                                                                                                                                                                                                      \\ \hline
-\textbf{Actor: Student, Staff Member, Guest - (User)}                                                                                                                                                     & \textbf{System: NavUp Map Navigation}                                                                                                                                                                                              \\ \hline
+\textbf{Actor: Student, Staff Member, Guest - (User)}                                                                                                                                                     & \textbf{System: NavUP Map Navigation}                                                                                                                                                                                              \\ \hline
                                                                                                                                                                                                           & 0. The system displays the main menu.                                                                                                                                                                         \\ \hline
 \begin{tabular}[c]{@{}l@{}}1. TUCBW user clicks the "search" icon \\ on the main menu.\end{tabular}                                                                                                       & \begin{tabular}[c]{@{}l@{}}2. The system displays a search bar and \\ recently searched items as "clickable".\end{tabular}                                                                                          \\ \hline
 \begin{tabular}[c]{@{}l@{}}3. The user\\ (a) enters the input location and presses \\ the enter button to search or,\\ (b) clicks on any of the recently searched\\ items to see them again.\end{tabular} & \begin{tabular}[c]{@{}l@{}}4. The system will display the main map and \\ auto-scroll to the location point or display a \\ “Did you mean to say …” options or \\ “Location could not be found” error.\end{tabular} \\ \hline
@@ -681,7 +684,7 @@ Requirements      & Priority      & UC9 & UC10 & UC11 & UC12 & UC13 & UC14 & UC1
 \hline
 \multicolumn{2}{|l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Precondition: The user should have speakers available \\ and working on his device.\end{tabular}}}                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
 \textbf{Actor: Student, Staff Member, Guest - (User)}                                                                                                                                                           & \textbf{System: NavUP Directional Navigation}                                                                                                                                                                                                                                                                                                 \\ \hline
-                                                                                                                                                                                                                & \begin{tabular}[c]{@{}l@{}}0. The NavUp System displays \\ the main menu.\end{tabular}                                                                                                                                                                                                                                                        \\ \hline
+                                                                                                                                                                                                                & \begin{tabular}[c]{@{}l@{}}0. The NavUP System displays \\ the main menu.\end{tabular}                                                                                                                                                                                                                                                        \\ \hline
 \begin{tabular}[c]{@{}l@{}}1. TUCBW user clicks the \\ "\textless- Turn-By-Turn-Directions -\textgreater" \\ button on the main menu.\end{tabular}                                                              & \begin{tabular}[c]{@{}l@{}}2. The system displays a "starting point" \\ text field and "destination" text field.\end{tabular}                                                                                                                                                                                                                 \\ \hline
 \begin{tabular}[c]{@{}l@{}}3. The user enters the "starting point" \\ and "destination point" in the\\ text fields, either in full or \\ through auto-complete and clicks \\ on the "Find" button.\end{tabular} & \begin{tabular}[c]{@{}l@{}}4. The system will display a dialog box\\ with the message "Do you want Automated\\ Voice Instructions" and "Yes" and "No" \\ buttons.\end{tabular}                                                                                                                                                                \\ \hline
 \begin{tabular}[c]{@{}l@{}}5. The user clicks either the \\ "Yes" or the "No" button.\end{tabular}                                                                                                              & \begin{tabular}[c]{@{}l@{}}6. The system will display the map with a \\ "Stick Man" on your current location with \\ instructions below the map and \\ possibly voice instructions \\ (if clicked "Yes") on the route to follow.\end{tabular}                                                                                                 \\ \hline
@@ -752,7 +755,7 @@ state to roll back changes.
  The system needs to be maintainable so that the future prospects of this system can expand to other campuses and in doing so code should be modular and well documented. Software and frameworks to be used should have a wide range of support and be established aiding the maintainability of the system.
 
 \paragraph{\textbf{Scalability} \\}
- The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft Windows Mobile with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even augmented reality for the ultimate user experience.
+ The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, iOS and Microsoft Windows Mobile with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even augmented reality for the ultimate user experience.
 
 \paragraph{\textbf{Auditability} \\}
  The system and application should make use of logs so that if there are any queries or faults it can easily be traced or detected. These logs will also log navigational information, and for future prospects a user can opt in to share their experience where these log files from the application could be sent to a remote server where the developers can analyse this data to improve the system. \\The following is necessary to be logged:
