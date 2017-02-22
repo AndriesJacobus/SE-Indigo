@@ -255,7 +255,7 @@ The application will be implemented on mobile platform (specifically, Android an
 \end{itemize}
  
 \subsection{Assumptions and Dependencies}
-%\let\labelitemi\labelitemii
+
 The factors that affect the requirements are:
 \begin{itemize}
 	 
@@ -267,17 +267,47 @@ The factors that affect the requirements are:
 		\item Hotspots - We assumed that the Wi-Fi Hotspots on campus will be forever lasting and we depend on this application to triangulate and refine navigation on the application.
 	 
 \end{itemize}
- 
-
 
 \section{Specific Requirements}
 
 \subsection{External Interface Requirements}
 
-\subsubsection{User interfaces:}
-\paragraph{...}
-\subsubsection{Hardware interfaces:}
-\paragraph{...}
+\subsubsection{User Interfaces}
+\begin{itemize}
+
+	\item 'Directions' icon: The goal of this icon if to enable the user to access directions to a specific venue or map location. When the user selects this option, two possibilities exist for what could be shown:
+	
+    	\tab - A list of saved directions from a saved origin point A to a saved destination point B.
+    	
+    	\tab - An option to request new directions.
+	
+	\item Search bar: When a user wants to search for a location or venue, this bar at the top of the screen will be used. It also serve as a way to initiate the process of requesting directions. This can be done after a location is searched when a suggestion to generate directions to the venue from the current location presents itself.
+	
+	\item Current location: This is a pin or indicator on the virtual map to represent your current geographic location. This is useful to determine if you are actually moving closer to the place where you want to be, or if you might be misinterpreting the directions given to you. It is also an indicator that the service is working correctly, since it is able to accurately pick up where you are.
+	
+	\item Compass: A useful tool in executing directions. The compass will commonly we a small icon on the top-right side of the screen showing which direction you are currently facing.
+	
+	\item Map: The majority of the screen (background) will comprise of the virtual map of the area you are currently in. It is designed in this way to make sure the most meaningful information (in this case, the map of all the locations or venues in your current vicinity) is easily accessible without you having to look for it. It is also an intuitive way for humans to interact with geographical information, as maps have effectively been used for generations to virtualise environments.
+	
+	\item A Menu from where a user can choose to do a multitude of actions, like:
+	    
+	    \tab - Log in or out of a certain profile to be able to access different rights, if applicable.
+	
+	    \tab - Change his / her personal settings.
+	
+	    \tab - View heat maps that can be used to determine places that have a high amount of people at a given time, which can in turn be used to make deductions about traffic in a certain area.
+	
+\end{itemize}
+
+\subsubsection{Hardware Interfaces}
+\begin{itemize}
+	
+\end{itemize}
+
+\subsubsection{Communication Interfaces}
+\begin{itemize}
+
+\end{itemize}
 
 \subsection{Functional Requirements}
 
