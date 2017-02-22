@@ -130,7 +130,8 @@ The name of the proposed software application is NavUP (NavigationUP). NavUP is 
 	\item NavUP - Navigation University of Pretoria
 	\item 2D - Two Dimensional
 	\item 3D - Three Dimensional
-	\itme SRC - Student Representative Council
+	\item SRC - Student Representative Council
+	\item RUTM - Requirement Use Case Tracebility Matrix
 \end{enumerate}
 
 \paragraph{\textbf{Abbreviations}}
@@ -150,34 +151,113 @@ The rest of this document will be solely focused on elaborating on the requireme
 
 \subsection{Product Perspective}
 
-\subsubsection{System Interfaces}
-\paragraph{...}
 \subsubsection{User Interfaces}
-\paragraph{...}
+\begin{itemize}
+	\item There will be a 'directions' icon on the home screen to seek directions.
+	\item There will be a search bar to search for specific venues and places.
+	\item There will be an icon to specify where you are on the map.
+	\item There will be a compass to show which direction you’re currently facing.
+	\item The map will be take up majority of the screen(background).
+	\item A Menu/options list which will show all options for the map such as displaying heat maps, recording goals and logging in of different types of users
+	
+\end{itemize}
 \subsubsection{Hardware Interfaces}
-\paragraph{...}
+\begin{itemize}
+	\item In offline mode, the device must be able to store.
+	\item NavUP is intended to be a mobile application for both the Andriod and iOS platform.
+	\item Both iOS and Andriod provide abstractions for all network communications and hardware.
+	
+\end{itemize}
 \subsubsection{Software Interfaces}
-\paragraph{...}
+\begin{itemize}
+	\item NavUP applications will use the Java JDK and the Android SDK tools. For iOS Objective-C or Xamarin will be used.
+	
+	\item NavUP application could also make use of web-to-mobile frameworks such as Ionic - which is a cross platform development framework that supports Android, iOS and Windows Mobile.
+	
+\end{itemize}
 \subsubsection{Communication Interfaces}
-\paragraph{...}
+\begin{itemize}
+	\item 	The NavUp application could use a HTTP server which uses a push protocol to push notifications onto the device.
+	\item  Another means of communication is by consuming the RESTful API/Service that the back-end system will provide.
+\end{itemize}
 \subsubsection{Memory}
-\paragraph{...}
+\begin{itemize}
+	\item For Android, it should be able to work on Android 4.23.0 to the latest version which is 7.0. For iOS, it should be able to work from 7.0 and later.
+	\item The application would need a considerate amount of memory to run since it needs to process and emulate maps and navigation which is graphically intensive.
+	
+\end{itemize}
 \subsubsection{Operations}
-\paragraph{...}
-\subsubsection{Site Adaptation Requirements}
-\paragraph{...}
+\begin{itemize}
+	\item Visualise pedestrian traffic.
+	\item Navigate.
+	\item Determine current location.
+	\item Searching locations.
+	\item Saving locations.
+	\item Provide directions.
+	
+\end{itemize}
 
 \subsection{Product Functions}
 \paragraph{...}
+<<<<<<< HEAD
 This product is meant to guide people to specific buildings on the Hatfield campus. It needs to include basic navigation functionality, such as searching for a specific location, finding directions to that location an saving a location for later use. It needs to use the wi-fi routers on the Hatfield campus to accomplish these functions.
-\subsection{User Characteristics}
-\paragraph{...}
-The users of this app can be seen as anyone wanting to find a specific place on the Hatfield campus. It will generally be used by students and lecturers, as well as guest lecturers and visitors to the campus. While most of the users would be tech savvy, many might not understand the product or how it works.
-\subsection{Constraints}
-\paragraph{...}
-There would be a few constraints namely, the availability of wi-fi signal through out campus. We are also limited with the location technologies that these routers provide as well as connectivity issues when there are too many people on campus.
+The app will be available on mobile devices and will allow the users to navigate the campus with ease, finding major buildings and campus landmarks.
 
-% BEGIN Avinash
+\subsection{User Characteristics}
+The users of this app can be seen as anyone wanting to find a specific place on the Hatfield campus. It will generally be used by students and lecturers, as well as guest lecturers and visitors to the campus. While most of the users would be tech savvy, many might not understand the product or how it works. The intended users and their characteristics are:
+
+\subsubsection{Staff Member}
+
+\begin{itemize}
+	 
+		\item Educational level: From a member of staff it is assumed that the level of education is reasonably adequate to satisfy the requirements of effective use for this application.
+		\item Expertise: Relatively high level of expertise.
+		\item Experience: The application is made user friendly such that a member a staff would be able to effectively use it even with zero past experience.
+		\item Technical skills: Little to no technical skills.
+	 
+\end{itemize}
+
+\subsubsection{Student}
+
+\begin{itemize}
+	 
+		\item Educational level: A moderate level of education is assumed for a student that will partake in the application. Considering students at the University may vary from undergrad to postgraduate, the former is taken as base characterising level. 
+		\item Expertise: A high level of expertise is supposed for students, as it can be assumed that they have ample expertise with the necessary devices to use the application properly.
+		\item Experience: A high level of experience is assumed, since students spend a large amount of time on campus and thus a large amount of time can possibly be spent on using the application.
+		\item Technical skills: A relatively high level of technical skills can be characterised for students - higher than guests but lower than staff.
+	 
+\end{itemize}
+
+\subsubsection{Guest}
+
+\begin{itemize}
+	 
+		\item Educational level: Guests with varying levels of education can be expected, thus the lowest level of education must be catered for while still maintaining usability for users with a higher education. 
+		\item Expertise: Zero expertise is assumed to be able to cater for every type of guest.
+		\item Experience: Since guests vary on a daily basis and the majority of these guests every day are new guests, no assumptions of past experience is allocated.
+		\item Technical skills: A low par of technical skills is expected.
+	 
+\end{itemize}
+
+\subsection{Constraints}
+The following points below can be seen as constraints to the project.
+The application will be implemented on mobile platform (specifically, Android and iOS). This means that we are constrained to use the minimal amount of CPU power, RAM size and Hard-drive space. Other than this, there are also some constraints rotating around networking and the actual gathering of geographical information. All these constraints can be enumerated as:
+>>>>>>> origin/master
+
+\begin{itemize}
+	 
+		\item CPU: At least 700 MHz of power on a dedicated core to compensate for multiple tasks that will take place at the same time (like networking, communication between the Wi-Fi chipset and the application, the use of the compass for directional information, etc).
+		
+		\item RAM: A minimum of 128 MB of RAM is recommended, given that constant updates are needed among other things like map virtualization.
+		
+		\item Hard-drive space: 100 MB of space should suffice, depending on the extent of user information and caching the user decides to use.
+		
+		\item For the process of connecting and communicating through Wi-Fi, Tcp-Ip is used since it can be considered the common gateway for internet applications. This means that the device must be fitted with an appropriate Wi-Fi communicator chip that supports Tcp-Ip communication.
+		
+		\item The product is given as is without any type of warranty.
+	 
+\end{itemize}
+ 
 \subsection{Assumptions and Dependencies}
 %\let\labelitemi\labelitemii
 The factors that affect the requirements are:
@@ -185,23 +265,28 @@ The factors that affect the requirements are:
 	 
 		\item Lack of connectivity -  Wi-Fi isn't available everywhere on campus (e.g. I.T building). Thus, assuming that Wi-Fi on campus will essentially be available everywhere in due time, and/or mobile network fall-back is assumed.
 		
-		\item Mobile devices - It is assumed that a user will have a mobile device that can run the application; it must specifically be able to run the newer versions of Android, IOS and Windows Mobile. We assumed that the mobile device was powerful enough to draw maps and emulate navigation.
+		\item Mobile devices - It is assumed that a user will have a mobile device that can run the application; it must specifically be able to run the newer versions of Android, iOS and Windows Mobile. We assumed that the mobile device was powerful enough to draw maps and emulate navigation.
 		\item Server - The application depends on running on a remote server where the mobile application can authenticate and gain essential information to navigation.
 		
 		\item Hotspots - We assumed that the Wi-Fi Hotspots on campus will be forever lasting and we depend on this application to triangulate and refine navigation on the application.
 	 
 \end{itemize}
-% END Avinash
+ 
 
 
 \section{Specific Requirements}
 
 \subsection{External Interface Requirements}
+
+\subsubsection{User interfaces:}
 \paragraph{...}
+\subsubsection{Hardware interfaces:}
+\paragraph{...}
+
 \subsection{Functional Requirements}
 
 \subsubsection{User Login}
-\textbf{Description:}  The application will provide the ability for users to login. Students and staff have their UP Portal accounts linked to the NavUP system database will input thier respective username and password. Guests/Visitors will click "Guest Log-in" instead of credentials. The system database will verify the credentials (processing) and output returns to the current screen on "error" or the application home page on "success".\\\\
+\textbf{Description:}  The application will provide the ability for users to login. Students and staff have their UP Portal accounts linked to the NavUP system database will input their respective usernames and passwords. Guests/Visitors will click "Guest Log-in" instead of credentials. The system database will verify the credentials (processing) and output returns to the current screen on "error" or the application home page on "success".\\\\
 \noindent
 \textbf{Prioritisation:} Important\\
   
@@ -209,7 +294,7 @@ The factors that affect the requirements are:
 \textbf{Pre-conditions}
 \begin{itemize}
  	\item A user must have a connection to the server.
-  	\item A user must be registered with the University (staff/student), or be a visitor within the Hatfield premisis.
+  	\item A user must be registered with the University (staff/student), or be a visitor within the Hatfield premises.
   	\item The user must enter the correct information in order for the authentication to be successful.
 \end{itemize}
   
@@ -219,20 +304,10 @@ The factors that affect the requirements are:
   	\item The user is able to use all the user functionality provided by the system. 
   	\item The user may log out of the system when they wish to.
 \end{itemize}
-  
-\begin{figure}[H]
-  	\centering
-  		\includegraphics[width=0.7\textwidth]{LoginServicesContract.jpg}
-  	\caption{Service Contract: User Login}
-\end{figure}
-\begin{figure}[H]
-   	\centering
-   	\includegraphics[width=0.7\textwidth]{LoginActorSystem.jpg}
-   	\caption{Actor System: User Login}
-\end{figure}
-  
 
-\noindent \underline{Interactive graphical map of the University of Pretoria's Hatfield Campus – both indoor and outdoor structures will be mapped. Functions associated with this are described below:}
+\noindent \underline{Interactive graphical map of the University of Pretoria's Hatfield Campus - }\\
+\noindent \underline{both indoor and outdoor structures will be mapped.}\\
+\noindent \underline{Functions associated with this are described below:}
 
 \subsubsection{Map Scroll}
 
@@ -248,7 +323,8 @@ The factors that affect the requirements are:
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE
+%  	\item NONE
+	\item The map will be moved to the position where the user scrolled. 
 \end{itemize}
 
 \subsubsection{Map Zoom}
@@ -265,7 +341,8 @@ The factors that affect the requirements are:
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE
+%  	\item NONE
+	\item The map will zoomed in/out the amount the user pinched on the screen. 
 \end{itemize}
 
 \subsubsection{Map Query}
@@ -296,7 +373,7 @@ The factors that affect the requirements are:
 \textbf{Pre-conditions}
 \begin{itemize}
  	\item The user must be connected to the server during the pinning operation.
-	\item The user should be a student or staff member to exercise this feature - visitors have no active account for a databse save.
+	\item The user should be a student or staff member to exercise this feature - visitors have no active account for a database save.
 	\item Registration of modules should have taken place at least 24 hours before the application can auto-pin the modules.
 \end{itemize}
   
@@ -320,19 +397,19 @@ The factors that affect the requirements are:
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE
+  	\item The information location will be provided to the user.
 \end{itemize}
 
 \subsubsection{Change Map Type}
 
-\textbf{Description:}  NavUP will provide the users with a toggle button (input) to switch between normal map view as described above and a traffic congestion map (hot-zone map) – this map is coloured according to the relative traffic flow in various parts of campus (in shades of red) taking into account the number of Wi-Fi-users in and around hotspots in the particular area.\\\\
+\textbf{Description:}  NavUP will provide the users with a toggle button (input) to switch between normal map view as described above and a traffic congestion map (hot-zone map) – this map is coloured according to the relative traffic flow in various parts of campus (in shades of red) taking into account the number of Wi-Fi users in and around hotspots in the particular area.\\\\
 \noindent
 \textbf{Prioritisation:} Important\\
   
   
 \textbf{Pre-conditions}
 \begin{itemize}
- 	\item The WiFi must be up and running for the traffic congestion map to be displayed.
+ 	\item The Wi-Fi must be up and running for the traffic congestion map to be displayed.
 	\item The user must be connected to the server for information to be retrieved.
 \end{itemize}
   
@@ -376,12 +453,12 @@ The route from the starting point to the end point (both encircled) will be high
 \begin{itemize}
 	\item The user must be connected to the server for information to be retrieved.
 	\item The user must have in-built speakers or earphones to be able to hear the instructions.
-	\item All WiFi hotpsots must be working for triangulation to take place.
+	\item All Wi-Fi hotspots must be working for triangulation to take place.
 \end{itemize}
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE.
+  	\item The user will receive turn-by-turn navigation provided by the map and voice instructions.
 \end{itemize}
 
 \subsubsection{Automatic Re-Route}
@@ -398,12 +475,12 @@ The route from the starting point to the end point (both encircled) will be high
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE.
+  	\item The route will be re-calculated and displayed so that navigation can be relevant and accurate.
 \end{itemize}
 
 \subsubsection{Route Without Traffic}
 
-\textbf{Description:}  NavUP provides the integration of traffic congestion information with routing (a checkbox input is provided to enable this feature before the routing is processed) to allow users to choose routes where there is a less gathering of people (in terms of number of Wi-Fi connections alternative options are suggested).\\\\
+\textbf{Description:}  NavUP provides the integration of traffic congestion information with routing (a check-box input is provided to enable this feature before the routing is processed) to allow users to choose routes where there is a less gathering of people (in terms of number of Wi-Fi connections alternative options are suggested).\\\\
 \noindent
 \textbf{Prioritisation:} Important\\
   
@@ -415,7 +492,7 @@ The route from the starting point to the end point (both encircled) will be high
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE.
+  	\item The best possible route without traffic will be presented to the user.
 \end{itemize}
 
 \subsubsection{Monitor Fitness}
@@ -448,18 +525,18 @@ The route from the starting point to the end point (both encircled) will be high
   
 \textbf{Pre-conditions}
 \begin{itemize}
-	\item The University of Pretoria should integrate thier calendar with that of NavUP.
+	\item The University of Pretoria should integrate their calendar with that of NavUP.
 	\item All events must be communicated to the system administrator for them to be displayed.
 \end{itemize}
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE
+  	\item The calendar with the events will be displayed to the user.
 \end{itemize}
 
 \subsubsection{Set Reminder}
 
-\textbf{Description:} The user can interact with the calendar by clicking on specific events or dates to set remainders ("SAVE THIS DATE" checkbox). The output is of the date being highlighted on calendar view.\\\\
+\textbf{Description:} The user can interact with the calendar by clicking on specific events or dates to set remainders ("SAVE THIS DATE" check-box). The output is of the date being highlighted on calendar view.\\\\
 \noindent
 \textbf{Prioritisation:} Medium Priority\\
   
@@ -471,12 +548,12 @@ The route from the starting point to the end point (both encircled) will be high
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE
+  	\item The reminder will be set on the users device.
 \end{itemize}
 
 \subsubsection{Push Notifications}
 
-\textbf{Description:} When connected to the WiFi, the user can get a push notification slide down from the top of the screen when the event date has occurred (processing is always taking place in the background in order to check which user events are active on a specific date).\\\\
+\textbf{Description:} When connected to the Wi-Fi, the user can get a push notification slide down from the top of the screen when the event date has occurred (processing is always taking place in the background in order to check which user events are active on a specific date).\\\\
 \noindent
 \textbf{Prioritisation:} Medium Priority\\
   
@@ -489,7 +566,7 @@ The route from the starting point to the end point (both encircled) will be high
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item The user has the abiltiy to act on this notification i.e. clear it or ask for directions to the venue mentioned on it.
+  	\item The user has the ability to act on this notification i.e. clear it or ask for directions to the venue mentioned on it.
 \end{itemize}
 
 \subsubsection{Show event route}
@@ -501,38 +578,184 @@ The route from the starting point to the end point (both encircled) will be high
   
 \textbf{Pre-conditions}
 \begin{itemize}
-	\item NONE.
+	\item The user must have at least one event with a location available to navigate too.
 \end{itemize}
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE.
+  	\item The selected events route will be set as the users navigation destination.
 \end{itemize}
 
 \subsubsection{Add An Event}
 
-\textbf{Description:} The application allows an event to be added. Input includes name of event, date, venue, purpose, targeted auidence, dress code, time and event capacity. The event will be added to the events database table (processing). Output will be visible in "View Calendar".\\\\
+\textbf{Description:} The application allows an event to be added. Input includes name of event, date, venue, purpose, targeted audience, dress code, time and event capacity. The event will be added to the events database table (processing). Output will be visible in "View Calendar".\\\\
 \noindent
 \textbf{Prioritisation:} Medium Priority\\
   
   
 \textbf{Pre-conditions}
 \begin{itemize}
-	\item Only staff memebers, members of SRC and managment can add events.
+	\item Only staff members, SRC members and management can add events.
 \end{itemize}
   
 \textbf{Post-conditions}
 \begin{itemize}
-  	\item NONE.
+  	\item The event will be successfully added to the system.
 \end{itemize}
 
-\subsubsection{Use Cases Partioned Among Systems}
+\subsubsection{Identified Use Cases}
+\textbf{Requirements are rephrased as business processes:}
+\begin{itemize}
+	\item UC1 - Log in User
+	\item UC2 - Scroll Map
+	\item UC3 - Zoom Map
+	\item UC4 - Query Map
+	\item UC5 - Save Map Location
+	\item UC6 - View Map Location Information
+	\item UC7 - Switch Map
+	\item UC8 - View Directions
+	\item UC9 - Provide Turn-by-Turn Directions
+	\item UC10 - View Traffic-less Directions
+	\item UC11 - Provide Traffic-less Directions
+	\item UC12 - Monitor Fitness
+	\item UC13 - View Calendar
+	\item UC14 - Set Reminder
+	\item UC15 - Enable Push-Notifications
+	\item UC16 - Add Event 
+\end{itemize}
+
+\pagebreak
+
+\subsubsection{Requirement Use Case Traceability Matrix}
+
+\begin{table}[H]
+\centering
+
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Requirements & Priority & UC1 & UC2 & UC3 & UC4 & UC5 & UC6 & UC7 & UC8 \\ \hline
+3.2.1 & 1 & x &  &  &  &  &  &  &  \\ \hline
+3.2.2 & 1 &  & x &  &  &  &  &  &  \\ \hline
+3.2.3 & 1 &  &  & x &  &  &  &  &  \\ \hline
+3.2.4 & 1 &  &  &  & x &  &  &  &  \\ \hline
+3.2.5 & 2 &  &  &  &  & x &  &  &  \\ \hline
+3.2.6 & 2 &  &  &  &  &  & x &  &  \\ \hline
+3.2.7 & 2 &  &  &  &  &  &  & x &  \\ \hline
+3.2.8 & 1 &  &  &  &  &  &  &  & x \\ \hline
+3.2.9 & 1 &  &  &  &  &  &  &  &  \\ \hline
+3.2.10 & 2 &  &  &  &  &  &  &  &  \\ \hline
+3.2.11 & 2 &  &  &  &  &  &  &  &  \\ \hline
+3.2.12 & 4 &  &  &  &  &  &  &  &  \\ \hline
+3.2.13 & 3 &  &  &  &  &  &  &  &  \\ \hline
+3.2.14 & 4 &  &  &  &  &  &  &  &  \\ \hline
+3.2.15 & 3 &  &  &  &  &  &  &  &  \\ \hline
+3.2.16 & 3 &  &  &  &  &  &  &  & x \\ \hline
+3.2.17 & 4 &  &  &  &  &  &  &  &  \\ \hline
+\multicolumn{2}{|l|}{UC Priority} & 1 & 1 & 1 & 1 & 2 & 2 & 2 & 1 \\ \hline
+\end{tabular}
+\caption{Traceability Matrix - Too large to fit - Part 1}
+\end{table}
+
+\begin{table}[H]
+\centering
+
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Requirements      & Priority      & UC9 & UC10 & UC11 & UC12 & UC13 & UC14 & UC15 & UC16 \\ \hline
+3.2.1             & 1             &     &      &      &      &      &      &      &      \\ \hline
+3.2.2             & 1             &     &      &      &      &      &      &      &      \\ \hline
+3.2.3             & 1             &     &      &      &      &      &      &      &      \\ \hline
+3.2.4             & 1             &     &      &      &      &      &      &      &      \\ \hline
+3.2.5             & 2             &     &      &      &      &      &      &      &      \\ \hline
+3.2.6             & 2             &     &      &      &      &      &      &      &      \\ \hline
+3.2.7             & 2             &     &      &      &      &      &      &      &      \\ \hline
+3.2.8             & 1             &     &      &      &      &      &      &      &      \\ \hline
+3.2.9             & 1             & x   &      &      &      &      &      &      &      \\ \hline
+3.2.10            & 2             & x   &      & x    &      &      &      &      &      \\ \hline
+3.2.11            & 2             &     & x    & x    &      &      &      &      &      \\ \hline
+3.2.12            & 4             &     &      &      & x    &      &      &      &      \\ \hline
+3.2.13            & 3             &     &      &      &      & x    &      &      &      \\ \hline
+3.2.14            & 4             &     &      &      &      &      & x    &      &      \\ \hline
+3.2.15            & 3             &     &      &      &      &      &      & x    &      \\ \hline
+3.2.16            & 3             & x   & x    & x    &      &      &      &      &      \\ \hline
+3.2.17            & 4             &     &      &      &      &      &      &      & x    \\ \hline
+\multicolumn{2}{|l|}{UC Priority} & 1   & 1    & 2    & 3    & 3    & 4    & 3    & 4    \\ \hline
+\end{tabular}
+\caption{Traceability Matrix - Continuation - Part 2}
+\end{table}
+
+
+\pagebreak
+
+\subsubsection{Use Cases Partitioned Among Systems}
+
 \begin{figure}[H]
    	\centering
-   	\includegraphics[width=0.7\textwidth]{NavUP-Map-Subsystem.jpg}
-   	\caption{Map Sub-system}
+   	\includegraphics[width=0.7\textwidth]{UserManagement.jpg}
+   	\caption{User Management Sub-System of NavUP}
 \end{figure}
 
+\begin{figure}[H]
+   	\centering
+   	\includegraphics[width=0.7\textwidth]{MapNavigation.jpg}
+   	\caption{Map Navigation Sub-System of NavUP}
+\end{figure}
+
+\begin{figure}[H]
+   	\centering
+   	\includegraphics[width=0.7\textwidth]{DirectionalNavigation.jpg}
+   	\caption{Directional Navigation Sub-System of NavUP}
+\end{figure}
+
+\begin{figure}[H]
+   	\centering
+   	\includegraphics[width=0.7\textwidth]{ActivitiesAndEventsManagement.jpg}
+   	\caption{Activities and Events Management Sub-System of NavUP}
+\end{figure}
+
+
+\pagebreak
+\subsubsection{Actor-System Interaction Modelling}
+ 
+
+\begin{table}[H]
+
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Precondition: The user should have registered at the university \\ or be a guest in the vicinity of the university.\end{tabular}}}                                                                                                                                                                                                                                      \\ \hline
+\textbf{Actor: Student, Staff Member, Guest - (User)}                                                                                                                                                     & \textbf{System: NavUP Map Navigation}                                                                                                                                                                                              \\ \hline
+                                                                                                                                                                                                          & 0. The system displays the main menu.                                                                                                                                                                         \\ \hline
+\begin{tabular}[c]{@{}l@{}}1. TUCBW user clicks the "search" icon \\ on the main menu.\end{tabular}                                                                                                       & \begin{tabular}[c]{@{}l@{}}2. The system displays a search bar and \\ recently searched items as "clickable".\end{tabular}                                                                                          \\ \hline
+\begin{tabular}[c]{@{}l@{}}3. The user\\ (a) enters the input location and presses \\ the enter button to search or,\\ (b) clicks on any of the recently searched\\ items to see them again.\end{tabular} & \begin{tabular}[c]{@{}l@{}}4. The system will display the main map and \\ auto-scroll to the location point or display a \\ “Did you mean to say …” options or \\ “Location could not be found” error.\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}5. TUCEW user sees the location point \\ or the error message on the screen.\end{tabular}                                                                                      &                                                                                                                                                                                                                     \\ \hline
+\textbf{Postcondition: NONE}                                                                                                                                                                              &                                                                                                                                                                                                                     \\ \hline
+\end{tabular}
+\caption{UC4: Query Map}
+\end{table}
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Precondition: The user should have speakers available \\ and working on his device.\end{tabular}}}                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+\textbf{Actor: Student, Staff Member, Guest - (User)}                                                                                                                                                           & \textbf{System: NavUP Directional Navigation}                                                                                                                                                                                                                                                                                                 \\ \hline
+                                                                                                                                                                                                                & \begin{tabular}[c]{@{}l@{}}0. The NavUP System displays \\ the main menu.\end{tabular}                                                                                                                                                                                                                                                        \\ \hline
+\begin{tabular}[c]{@{}l@{}}1. TUCBW user clicks the \\ "\textless- Turn-By-Turn-Directions -\textgreater" \\ button on the main menu.\end{tabular}                                                              & \begin{tabular}[c]{@{}l@{}}2. The system displays a "starting point" \\ text field and "destination" text field.\end{tabular}                                                                                                                                                                                                                 \\ \hline
+\begin{tabular}[c]{@{}l@{}}3. The user enters the "starting point" \\ and "destination point" in the\\ text fields, either in full or \\ through auto-complete and clicks \\ on the "Find" button.\end{tabular} & \begin{tabular}[c]{@{}l@{}}4. The system will display a dialog box\\ with the message "Do you want Automated\\ Voice Instructions" and "Yes" and "No" \\ buttons.\end{tabular}                                                                                                                                                                \\ \hline
+\begin{tabular}[c]{@{}l@{}}5. The user clicks either the \\ "Yes" or the "No" button.\end{tabular}                                                                                                              & \begin{tabular}[c]{@{}l@{}}6. The system will display the map with a \\ "Stick Man" on your current location with \\ instructions below the map and \\ possibly voice instructions \\ (if clicked "Yes") on the route to follow.\end{tabular}                                                                                                 \\ \hline
+\begin{tabular}[c]{@{}l@{}}7. The user will see \\ these instructions on the screen and follow them by moving \\ with his or her device in the specified direction.\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}8. The System moves the "Stick Man" and\\ possibly gives voice instructions as the \\ user movement is sensed - if the user \\ moves incorrectly the system will \\ provide re-routing instructions. The system \\ eventually notifies user by means of \\ a pop-up message of "Destination Reached".\end{tabular} \\ \hline
+9. TUCEW user sees the "Destination Reached" message.                                                                                                                                                           &                                                                                                                                                                                                                                                                                                                                               \\ \hline
+\textbf{Postcondition: NONE}                                                                                                                                                                                    &                                                                                                                                                                                                                                                                                                                                               \\ \hline
+\end{tabular}
+\caption{UC9: Provide Turn-By-Turn Directions}
+\end{table}
+
+
+\pagebreak
 \subsection{Performance Requirements}
 
 %\let\labelitemi\labelitemii
@@ -542,9 +765,9 @@ The route from the starting point to the end point (both encircled) will be high
 \begin{itemize}
 \item Map Search Algorithm\\The search algorithm should be efficient – keywords specified by the user needs to be hashed to find the location on the map. A time-complexity of Big-O(1) is achieved. A hash-table with possible keywords need to be matched to locations on the map.
 
-\item Directional Search Algorithm\\The routes determined must be least cost routes in terms of distance and in terms of traffic rates – Djikstra’s algorthim.
+\item Directional Search Algorithm\\The routes determined must be least cost routes in terms of distance and in terms of traffic rates – Djikstra’s algorithm.
 
-\item User Location Determination\\The coordination of the WiFi hotspots in determining user location should be to a precision that allows an error-rate of no more than 7 metres.
+\item User Location Determination\\The coordination of the Wi-Fi hotspots in determining user location should be to a precision that allows an error-rate of no more than 7 metres.
 
 \item Re-Routing\\A time-elapse of no more than 5 seconds is allowed when the system has to re-calculate the routes.
 
@@ -552,14 +775,14 @@ The route from the starting point to the end point (both encircled) will be high
 
 \item Interactiveness and Response Time\\The system must be interactive and the delays involved must be less. The opening of tabs, pop-ups, dialog boxes, switching between traffic and terrestrial maps, scrolling up and across the scene and zooming in and out of the map should all have quick response time - these functions need to be initiated within two seconds submitting them to the system in the form of click/scroll input.
 
-\item System Dependability\\If the system loses the connection to the WiFi or gets some gibberish input to which it transitions to an unstable state, the user should be informed rather then there being stagnant instances of time.
+\item System Dependability\\If the system loses the connection to the Wi-Fi or gets some gibberish input to which it transitions to an unstable state, the user should be informed rather then there being stagnant instances of time.
 
 \end{itemize}
 
 \subsection{Design Constraints}
 \paragraph{...}
 
-% BEGIN Avinash
+ 
 \subsection{Software System Attributes}
 \subsubsection{Quality Requirements }
 The following section will focus on the quality requirements of the overall system and mobile application at its highest level of granularity. All the requirements defined, are for all components of the system.
@@ -591,7 +814,7 @@ state to roll back changes.
  The system needs to be maintainable so that the future prospects of this system can expand to other campuses and in doing so code should be modular and well documented. Software and frameworks to be used should have a wide range of support and be established aiding the maintainability of the system.
 
 \paragraph{\textbf{Scalability} \\}
- The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, IOS and Microsoft Windows Mobile with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even augmented reality for the ultimate user experience.
+ The system should be able to process data fast and data should not be lost so there should be a bus architecture to solve the data loss problem. The system should be able to allow for multiple users connecting to the service and be able to handle large volumes of users with no performance loss. The system should be coded to be scalable so that it can be deployed on many platforms such as Android, iOS and Microsoft Windows Mobile with compatibility support. The application should also be scalable so that it can easily change from a 2D navigation system to a 3D or even augmented reality for the ultimate user experience.
 
 \paragraph{\textbf{Auditability} \\}
  The system and application should make use of logs so that if there are any queries or faults it can easily be traced or detected. These logs will also log navigational information, and for future prospects a user can opt in to share their experience where these log files from the application could be sent to a remote server where the developers can analyse this data to improve the system. \\The following is necessary to be logged:
@@ -613,17 +836,5 @@ provide a good user experience. One method of ensuring the performance
 is visible to the user is to make use of feedback tools to ensure the user
 is aware that the system is performing as expected or to notify the users
 should something have gone wrong.
-
-% END Avinash
-
-
-\subsection{Other Requirements}
-\paragraph{...}
-
-\section{Appendixes}
-\paragraph{...}
-
-\section{Index}
-\paragraph{...}
 
 \end{document}

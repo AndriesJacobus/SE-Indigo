@@ -1,6 +1,18 @@
-# SE-Indigo
-Repo for the first assignment of COS 301, SE team Indigo
+# Software Engineering 
+## Team Indigo
+### NavUP System
 
-This readme we'll use to describe functionality as we add it. 
+Repository for the first assignment of COS 301 and COS 730, team Indigo.
 
-Just one rule, guys: don't commit to master :)
+This document follows the Software Requirements Specifications(SRS) defined by *Kung, D.C. (2013).*
+
+
+
+### Team Indigo members
+- [Avinash Singh](https://github.com/AvinashSingh786)
+- [Vignesh Iyer](https://github.com/Vignesh-95)
+- [Andries Jacobus](https://github.com/AndriesJacobus)
+- [Mfana Masimula](https://github.com/mfanamasimula)
+- [Nicaedin Suklal](https://github.com/)
+
+
