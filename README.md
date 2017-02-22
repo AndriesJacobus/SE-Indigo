@@ -9,10 +9,10 @@ This document follows the Software Requirements Specifications(SRS) defined by *
 
 
 ### Team Indigo members
-- [:github: Avinash Singh](https://github.com/AvinashSingh786)
-- [:github: Vignesh Iyer](https://github.com/Vignesh-95)
-- [:github: Andries Jacobus](https://github.com/AndriesJacobus)
-- [:github: Mfana Masimula](https://github.com/mfanamasimula)
-- [:github: Nicaedin Suklal](https://github.com/def118)
+- [:octocat: Avinash Singh](https://github.com/AvinashSingh786)
+- [:octocat: Vignesh Iyer](https://github.com/Vignesh-95)
+- [:octocat: Andries Jacobus](https://github.com/AndriesJacobus)
+- [:octocat: Mfana Masimula](https://github.com/mfanamasimula)
+- [:octocat: Nicaedin Suklal](https://github.com/def118)
 
 
