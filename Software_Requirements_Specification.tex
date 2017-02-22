@@ -315,6 +315,12 @@ The factors that affect the requirements are:
 \subsubsection{Communication Interfaces}
 \begin{itemize}
 
+	\item HTTP server: The NavUp application could use a HTTP server which uses a push protocol to push notifications onto the device. This is useful considering that a constant connection to the server isn't needed, the connection is only establish at set intervals in order to save on bandwidth.
+	
+	\item  Another means of communication is by consuming the RESTful API/Service that the back-end system will provide.
+	
+	\item The connection between the client and the server can also use connection-oriented communication, like via TCP/IP—Transfer Control Protocol/Internet Protocol which would imply reliable delivery of messages, but at a higher bandwidth cost.
+
 \end{itemize}
 
 \subsection{Functional Requirements}
