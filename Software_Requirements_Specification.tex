@@ -237,8 +237,22 @@ The intended users and their characteristics are:
 \end{itemize}
 
 \subsection{Constraints}
-\paragraph{...}
+The following points below can be seen as constraints to the project.
+The application will be implemented on mobile platform (specifically, Android and iOS). This means that we are constrained to use the minimal amount of CPU power, RAM size and Hard-drive space. Other than this, there are also some constraints rotating around networking and the actual gathering of geographical information. All these constraints can be enumerated as:
 
+\begin{itemize}
+	 
+		\item CPU: At least 700 MHz of power on a dedicated core to compensate for multiple tasks that will take place at the same time (like networking, communication between the Wi-Fi chipset and the application, the use of the compass for directional information, etc).
+		
+		\item RAM: A minimum of 128 MB of RAM is recommended, given that constant updates are needed among other things like map virtualization.
+		
+		\item Hard-drive space: 100 MB of space should suffice, depending on the extent of user information and caching the user decides to use.
+		
+		\item For the process of connecting and communicating through Wi-Fi, Tcp-Ip is used since it can be considered the common gateway for internet applications. This means that the device must be fitted with an appropriate Wi-Fi communicator chip that supports Tcp-Ip communication.
+		
+		\item The product is given as is without any type of warranty.
+	 
+\end{itemize}
  
 \subsection{Assumptions and Dependencies}
 %\let\labelitemi\labelitemii
