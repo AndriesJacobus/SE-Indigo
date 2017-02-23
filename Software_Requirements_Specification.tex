@@ -281,9 +281,9 @@ The factors that affect the requirements are:
 
 	\item 'Directions' icon: The goal of this icon if to enable the user to access directions to a specific venue or map location. When the user selects this option, two possibilities exist for what could be shown:
 	
-    	\tab - A list of saved directions from a saved origin point A to a saved destination point B.
+   	\item - A list of saved directions from a saved origin point A to a saved destination point B.
     	
-    	\tab - An option to request new directions.
+   	\item - An option to request new directions.
 	
 	\item Search bar: When a user wants to search for a location or venue, this bar at the top of the screen will be used. It also serve as a way to initiate the process of requesting directions. This can be done after a location is searched when a suggestion to generate directions to the venue from the current location presents itself.
 	
@@ -295,31 +295,31 @@ The factors that affect the requirements are:
 	
 	\item A Menu from where a user can choose to do a multitude of actions, like:
 	    
-	    \tab - Log in or out of a certain profile to be able to access different rights, if applicable.
+	 \item - Log in or out of a certain profile to be able to access different rights, if applicable.
 	
-	    \tab - Change his / her personal settings.
+	 \item - Change his / her personal settings.
 	
-	    \tab - View heat maps that can be used to determine places that have a high amount of people at a given time, which can in turn be used to make deductions about traffic in a certain area.
+	 \item - View heat maps that can be used to determine places that have a high amount of people at a given time, which can in turn be used to make deductions about traffic in a certain area.
 	
 \end{itemize}
 
 \subsubsection{Hardware Interfaces}
 \begin{itemize}
 	
-	\item Storage: When the device is not connected to the internet and / or not making use of online resources, the application needs to make use of the device's storage system to save relevant information for later use. This makes the need for an effective interface between the application and the device's hard-drive blatantly apparent.
+	\item Storage: When the device is not connected to the internet and / or not making use of on-line resources, the application needs to make use of the device's storage system to save relevant information for later use. This makes the need for an effective interface between the application and the device's hard-drive blatantly apparent.
 	
-	\item Communications chipset: Tcp is needed for the client to connect to the server in online mode, thus the relevant hardware and the relevant drivers for the hardware needs to be present for this communication to be able to take place.
+	\item Communications chipset: TCP is needed for the client to connect to the server in on-line mode, thus the relevant hardware and the relevant drivers for the hardware needs to be present for this communication to be able to take place.
 	
 \end{itemize}
 
 \subsubsection{Communication Interfaces}
 \begin{itemize}
 
-	\item HTTP server: The NavUp application could use a HTTP server which uses a push protocol to push notifications onto the device. This is useful considering that a constant connection to the server isn't needed, the connection is only establish at set intervals in order to save on bandwidth.
+	\item HTTP server: The NavUP application could use a HTTP server which uses a push protocol to push notifications onto the device. This is useful considering that a constant connection to the server isn't needed, the connection is only establish at set intervals in order to save on bandwidth.
 	
 	\item  Another means of communication is by consuming the RESTful API/Service that the back-end system will provide.
 	
-	\item The connection between the client and the server can also use connection-oriented communication, like via TCP/IP—Transfer Control Protocol/Internet Protocol which would imply reliable delivery of messages, but at a higher bandwidth cost.
+	\item The connection between the client and the server can also use connection-oriented communication, like via TCP(Transfer Control Protocol)/IP(Internet Protocol) which would imply reliable delivery of messages, but at a higher bandwidth cost.
 
 \end{itemize}
 

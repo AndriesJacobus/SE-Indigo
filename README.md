@@ -1,6 +1,6 @@
-# Software Engineering 
-## Team Indigo :id:
-### NavUP System
+# Software Engineering :hotsprings:
+## Team Indigo :crystal_ball:
+### NavUP System :calling: :watch: :computer:
 
 Repository for the first assignment of COS 301 and COS 730, team Indigo.
 
